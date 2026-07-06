@@ -4,7 +4,7 @@
 
 --
 
-## 1️⃣ PROPUESTA DEL PROYECTO
+## 1️ PROPUESTA DEL PROYECTO
 
 ### Título
 **"Chatbot Educativo con IA para Asistencia en Programación Python"**
@@ -20,13 +20,13 @@ Un sistema de chatbot inteligente que responde preguntas sobre conceptos fundame
 
 ---
 
-## 2️⃣ OBJETIVO GENERAL
+##  OBJETIVO GENERAL
 
 Desarrollar un sistema de chatbot educativo con inteligencia artificial que sea capaz de procesar preguntas en lenguaje natural sobre Programación en Python y proporcionar respuestas relevantes y precisas mediante técnicas de aprendizaje automático.
 
 ---
 
-## 3️⃣ OBJETIVOS ESPECÍFICOS
+##  OBJETIVOS ESPECÍFICOS
 
 1. **Entrenar un modelo NLP** utilizando TF-IDF (Term Frequency-Inverse Document Frequency) en un dataset de preguntas y respuestas educativas
 
@@ -44,7 +44,7 @@ Desarrollar un sistema de chatbot educativo con inteligencia artificial que sea 
 
 
 
-## 5️⃣ ARQUITECTURA DEL SISTEMA
+##  ARQUITECTURA DEL SISTEMA
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -92,7 +92,7 @@ Desarrollar un sistema de chatbot educativo con inteligencia artificial que sea 
 
 ---
 
-## 6️⃣ TECNOLOGÍAS RECOMENDADAS
+##  TECNOLOGÍAS RECOMENDADAS
 
 ### Backend
 | Tecnología | Versión | Propósito |
@@ -122,7 +122,7 @@ Desarrollar un sistema de chatbot educativo con inteligencia artificial que sea 
 
 ---
 
-## 7️⃣ ESTRUCTURA DE CARPETAS
+##  ESTRUCTURA DE CARPETAS
 
 ```
 chatbot-educativo/
