@@ -49,6 +49,12 @@ class ChatbotModel:
         print(f"Exactitud: {self.exactitud:.2f}%")
 
     def encontrar_respuesta(self, pregunta_usuario):
+        texto = pregunta_usuario.strip().lower()
+
+        for pregunta, respuesta in zip(self.preguntas_entrenamiento, self.respuestas_entrenamiento):
+            if texto == pregunta.lower():
+                return respuesta, 1.0
+
         pregunta_vectorizada = self.vectorizador.transform([pregunta_usuario])
 
         similitudes = cosine_similarity(
