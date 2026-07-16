@@ -1,5 +1,4 @@
-# app.py
-# Servidor Flask que expone el chatbot como API
+
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS

@@ -1,6 +1,4 @@
-/* ========================= */
-/* RESET */
-/* ========================= */
+
 
 * {
   margin: 0;
@@ -21,9 +19,7 @@ body {
   color: #1f2937;
 }
 
-/* ========================= */
-/* CONTENEDOR PRINCIPAL */
-/* ========================= */
+
 
 .contenedor-principal {
   width: 100%;
@@ -35,9 +31,6 @@ body {
   background: white;
 }
 
-/* ========================= */
-/* HEADER */
-/* ========================= */
 
 .encabezado {
   background: #2563eb;
@@ -80,9 +73,7 @@ body {
   font-size: 13px;
 }
 
-/* ========================= */
-/* CHAT */
-/* ========================= */
+
 
 .area-chat {
   flex: 1;
@@ -103,9 +94,7 @@ body {
   gap: 18px;
 }
 
-/* ========================= */
-/* MENSAJES */
-/* ========================= */
+
 
 .mensaje {
   display: flex;
@@ -133,7 +122,6 @@ body {
   word-wrap: break-word;
 }
 
-/* Usuario */
 
 .mensaje.usuario .burbuja-mensaje {
   background: #2563eb;
@@ -142,7 +130,7 @@ body {
   border-bottom-right-radius: 6px;
 }
 
-/* Bot */
+
 
 .mensaje.bot .burbuja-mensaje {
   background: #f3f4f6;
@@ -163,9 +151,7 @@ body {
   opacity: 0.7;
 }
 
-/* ========================= */
-/* INPUT */
-/* ========================= */
+
 
 .pie-chat {
   background: white;
@@ -206,9 +192,7 @@ body {
   background: #f3f4f6;
 }
 
-/* ========================= */
-/* BOTONES */
-/* ========================= */
+
 
 .boton {
   border: none;
@@ -224,7 +208,7 @@ body {
   font-weight: 500;
 }
 
-/* Enviar */
+
 
 .boton-enviar {
   background: #2563eb;
@@ -237,7 +221,6 @@ body {
   background: #1d4ed8;
 }
 
-/* Limpiar */
 
 .boton-limpiar {
   background: #e5e7eb;
@@ -250,7 +233,7 @@ body {
   background: #d1d5db;
 }
 
-/* Entrenar */
+
 
 .boton-entrenar {
   background: white;
@@ -271,9 +254,7 @@ body {
   cursor: not-allowed;
 }
 
-/* ========================= */
-/* MÉTRICAS */
-/* ========================= */
+
 
 .panel-metricas {
   max-width: 900px;
@@ -303,9 +284,7 @@ body {
   margin-bottom: 6px;
 }
 
-/* ========================= */
-/* ERROR */
-/* ========================= */
+
 
 .error-banner {
   max-width: 900px;
@@ -321,9 +300,6 @@ body {
   border-radius: 10px;
 }
 
-/* ========================= */
-/* SCROLL */
-/* ========================= */
 
 .area-chat::-webkit-scrollbar {
   width: 8px;
@@ -338,9 +314,7 @@ body {
   background: transparent;
 }
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
+
 
 @media (max-width: 768px) {
 

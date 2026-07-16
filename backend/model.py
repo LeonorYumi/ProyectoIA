@@ -1,6 +1,4 @@
-# model.py
-# Modelo del chatbot: usa TF-IDF + similitud de coseno
-# para encontrar la respuesta más parecida a la pregunta del usuario
+
 
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -27,7 +25,7 @@ class ChatbotModel:
     def entrenar(self):
         print("Entrenando modelo...")
 
-        # Vectorizador por palabras (mejor que por caracteres para frases cortas)
+        # Vectorizador por palabras
         self.vectorizador = TfidfVectorizer(
             lowercase=True,
             strip_accents="unicode",
@@ -38,7 +36,7 @@ class ChatbotModel:
             self.preguntas_entrenamiento
         )
 
-        # Métrica simple de exactitud: probamos el modelo con sus propias preguntas
+        # Métrica simple de exactitud
         aciertos = 0
         for i, pregunta in enumerate(self.preguntas_entrenamiento):
             respuesta_encontrada, _ = self.encontrar_respuesta(pregunta)

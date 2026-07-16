@@ -1,14 +1,11 @@
-// App.js
-// Componente principal de la aplicación React
-// Este componente maneja la interfaz gráfica del chatbot
+
 
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
 
 function App() {
-  // Estados de la aplicación
-  // mensajes: historial de conversación
+
   const [mensajes, setMensajes] = useState([
     {
       tipo: 'bot',
@@ -17,48 +14,36 @@ function App() {
     }
   ]);
 
-  // preguntaActual: lo que escribe el usuario en el input
   const [preguntaActual, setPreguntaActual] = useState('');
-
-  // cargando: indica si estamos esperando respuesta del servidor
   const [cargando, setCargando] = useState(false);
 
-  // metricas: información del modelo
   const [metricas, setMetricas] = useState(null);
 
-  // modeloEntrenado: indica si el modelo ya está entrenado
   const [modeloEntrenado, setModeloEntrenado] = useState(false);
 
-  // errorMensaje: para mostrar errores
   const [errorMensaje, setErrorMensaje] = useState('');
 
-  // Referencia al final del chat para auto-scroll
   const finalDelChat = useRef(null);
 
-  // URL base de la API (asegúrate que Flask corre en este puerto)
   const API_BASE = 'http://localhost:5000/api';
 
-  // useEffect: se ejecuta cuando el componente carga
   useEffect(() => {
-    // Verificamos si el servidor está disponible
+
     verificarServidor();
-    // Auto-scroll al final del chat
+
     if (finalDelChat.current) {
       finalDelChat.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [mensajes]);
 
-  /**
-   * Verifica si el servidor Flask está corriendo
-   * y si el modelo está entrenado
-   */
+  
   const verificarServidor = async () => {
     try {
       const respuesta = await axios.get(`${API_BASE}/estado`);
       
       if (respuesta.data.modelo === 'Entrenado') {
         setModeloEntrenado(true);
-        // Si está entrenado, cargamos las métricas
+  
         await cargarMetricas();
       } else {
         setModeloEntrenado(false);
@@ -71,9 +56,7 @@ function App() {
     }
   };
 
-  /**
-   * Carga las métricas del modelo desde la API
-   */
+
   const cargarMetricas = async () => {
     try {
       const respuesta = await axios.get(`${API_BASE}/metricas`);
@@ -83,9 +66,7 @@ function App() {
     }
   };
 
-  /**
-   * Entrena el modelo (envía solicitud al backend)
-   */
+ 
   const entrenarModelo = async () => {
     setCargando(true);
     setErrorMensaje('');
@@ -93,7 +74,6 @@ function App() {
     try {
       const respuesta = await axios.post(`${API_BASE}/entrenar`);
 
-      // Agregamos mensaje del bot
       const nuevoMensaje = {
         tipo: 'bot',
         contenido: '✓ Modelo entrenado correctamente. Ahora puedo responder tus preguntas.',
@@ -103,7 +83,6 @@ function App() {
       setMensajes(prev => [...prev, nuevoMensaje]);
       setModeloEntrenado(true);
       
-      // Cargamos las métricas
       await cargarMetricas();
 
     } catch (error) {
@@ -114,22 +93,19 @@ function App() {
     }
   };
 
-  /**
-   * Envía una pregunta al chatbot
-   */
+
+   
   const enviarPregunta = async (e) => {
     e.preventDefault();
 
-    // Validamos que haya texto
+
     if (!preguntaActual.trim()) return;
 
-    // Si el modelo no está entrenado, entrenamos primero
     if (!modeloEntrenado) {
       setErrorMensaje('Primero debes entrenar el modelo. Haz clic en "Entrenar Modelo".');
       return;
     }
 
-    // Agregamos la pregunta del usuario al chat
     const mensajeUsuario = {
       tipo: 'usuario',
       contenido: preguntaActual,
@@ -142,12 +118,12 @@ function App() {
     setErrorMensaje('');
 
     try {
-      // Enviamos la pregunta al backend
+  
       const respuesta = await axios.post(`${API_BASE}/chatbot`, {
         pregunta: preguntaActual
       });
 
-      // Agregamos la respuesta del bot
+  
       const mensajeBot = {
         tipo: 'bot',
         contenido: respuesta.data.respuesta,
@@ -158,7 +134,7 @@ function App() {
       setMensajes(prev => [...prev, mensajeBot]);
 
     } catch (error) {
-      // Mostramos error
+
       const mensajeError = {
         tipo: 'bot',
         contenido: 'Lo siento, hubo un error. Intenta de nuevo.',
@@ -171,9 +147,7 @@ function App() {
     }
   };
 
-  /**
-   * Borra el historial de chat
-   */
+
   const limpiarChat = () => {
     setMensajes([
       {
@@ -186,14 +160,12 @@ function App() {
 
   return (
     <div className="contenedor-principal">
-      {/* Encabezado */}
+
       <header className="encabezado">
         <div className="info-encabezado">
           <h1>. Chatbot Educativo</h1>
           <p>Asistente IA para Programación en Python</p>
         </div>
-
-        {/* Botones de control */}
         <div className="botones-encabezado">
           {!modeloEntrenado && (
             <button
@@ -212,7 +184,6 @@ function App() {
         </div>
       </header>
 
-      {/* Área de mensajes */}
       <div className="area-chat">
         <div className="historial-mensajes">
           {mensajes.map((msg, idx) => (
@@ -240,14 +211,12 @@ function App() {
         </div>
       </div>
 
-      {/* Mensaje de error */}
       {errorMensaje && (
         <div className="error-banner">
           {errorMensaje}
         </div>
       )}
 
-      {/* Formulario de entrada */}
       <footer className="pie-chat">
         <form onSubmit={enviarPregunta} className="formulario">
           <input

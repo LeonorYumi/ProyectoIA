@@ -1,7 +1,4 @@
-# dataset.py
-# Preguntas y respuestas de entrenamiento del chatbot
-# El dataset está pensado para respuestas cortas, claras y útiles
-# para preguntas como hola, if, else, for, funciones y listas.
+
 
 dataset = [
     {"pregunta": "hola", "respuesta": "Hola. Soy tu chatbot educativo de Python. Puedo ayudarte con if, else, for, funciones, listas y variables."},

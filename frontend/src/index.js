@@ -1,5 +1,4 @@
-// index.js
-// Punto de entrada de la aplicación React
+
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
