@@ -1,0 +1,257 @@
+{
+  "intents": [
+    {
+      "tag": "info_que_es_programacion",
+      "patterns": [
+        "que es programar",
+        "que es un lenguaje de programacion",
+        "para que sirve la programacion",
+        "que es un algoritmo",
+        "explicame que es la programacion",
+        "para que se usa programar",
+        "que es un pseudocodigo",
+        "que es un codigo fuente",
+        "como empezar a programar",
+        "que es un compilador",
+        "que es un interprete",
+        "que es un bug",
+        "como se escribe un programa",
+        "que es un IDE",
+        "que es un sistema operativo",
+        "que es un software",
+        "que es un hardware",
+        "ejemplo de codigo",
+        "dame un ejemplo de codigo",
+        "codigo en python",
+        "codigo en javascript",
+        "muestra un codigo",
+        "programacion",
+        "que es programacion",
+        "definicion de programacion",
+        "para que sirve programar",
+        "que se necesita para programar"
+      ],
+      "responses": [
+        "Programar es escribir instrucciones ordenadas en un lenguaje que la computadora pueda entender y ejecutar, con el objetivo de resolver un problema, automatizar una tarea o construir una aplicacion. Un lenguaje de programacion como Python, JavaScript o Java es el conjunto de reglas y sintaxis que permite a los humanos comunicarse con la computadora de forma estructurada.",
+        "Un algoritmo es una secuencia ordenada y finita de pasos logicos para resolver un problema o realizar una tarea especifica, como una receta de cocina pero aplicada a la computacion. Antes de programar, es una buena practica disenar el algoritmo a veces con un diagrama de flujo o pseudocodigo para tener claro que pasos debe seguir el programa.",
+        "Por ejemplo, en Python puedes imprimir un mensaje con: print('Hola Mundo'). En JavaScript seria: console.log('Hola Mundo');",
+        "Un compilador traduce todo el codigo fuente de un programa a lenguaje maquina antes de ejecutarlo, como en C o Java. Un interprete ejecuta el codigo linea por linea directamente, como en Python o JavaScript, lo que permite probar cambios mas rapidamente pero puede ser mas lento."
+      ]
+    },
+    {
+      "tag": "info_variables",
+      "patterns": [
+        "que es una variable en programacion",
+        "tipos de datos cuales son",
+        "que es una constante",
+        "diferencia entre variable y constante",
+        "como declarar una variable",
+        "que es un entero",
+        "que es un string",
+        "que es un booleano",
+        "tipos de datos en python",
+        "que es un float",
+        "que es un array",
+        "que es un diccionario",
+        "que es un dato primitivo",
+        "que es una variable",
+        "tipos de variables",
+        "como se declara una variable en python",
+        "que es un int"
+      ],
+      "responses": [
+        "Una variable es un espacio en la memoria de la computadora que almacena un valor, y a ese espacio se le asigna un nombre para poder usarlo y modificarlo durante la ejecucion del programa. Por ejemplo, en Python: edad = 20 crea una variable llamada edad con el valor 20.",
+        "Los tipos de datos mas comunes en programacion son: enteros int, numeros sin decimales como 5; decimales float, como 5.75; texto string, como hola; y booleanos true o false, para representar verdadero o falso. Una constante es similar a una variable, pero su valor no puede cambiar una vez asignado durante la ejecucion del programa.",
+        "En Python, declaras una variable simplemente asignandole un valor: nombre = Juan. No necesitas especificar el tipo porque Python lo infiere automaticamente. En otros lenguajes como Java o C, si debes declarar el tipo explicitamente: int edad = 20;",
+        "Un array o lista almacena multiples valores bajo un mismo nombre, mientras que un diccionario guarda pares de clave y valor, como un diccionario real donde buscas una palabra clave y obtienes su definicion."
+      ]
+    },
+    {
+      "tag": "info_bucles",
+      "patterns": [
+        "que es un bucle",
+        "diferencia entre for y while",
+        "que es un ciclo en programacion",
+        "para que sirve un for",
+        "para que sirve un while",
+        "que es un loop",
+        "como funciona un for",
+        "como funciona un while",
+        "que es un ciclo",
+        "tipos de bucles",
+        "ejemplo de for",
+        "ejemplo de while"
+      ],
+      "responses": [
+        "Un bucle o ciclo es una estructura de control que permite repetir un bloque de codigo varias veces, mientras se cumpla una condicion o durante un numero definido de repeticiones, evitando asi escribir el mismo codigo repetidamente.",
+        "El bucle for se usa cuando sabes de antemano cuantas veces se repetira el ciclo, por ejemplo, recorrer una lista de 10 elementos, mientras que el bucle while se usa cuando la repeticion depende de una condicion que puede cambiar durante la ejecucion y no sabes exactamente cuantas veces se repetira.",
+        "Ejemplo de for en Python: for i in range(5): print(i) imprimira 0, 1, 2, 3, 4. Ejemplo de while: x = 0 while x < 5: print(x) x = x + 1 imprimira lo mismo pero controlando manualmente el contador.",
+        "El bucle do while existe en algunos lenguajes y garantiza que el bloque se ejecute al menos una vez antes de evaluar la condicion, a diferencia del while que evalua la condicion primero."
+      ]
+    },
+    {
+      "tag": "info_condicionales",
+      "patterns": [
+        "que es un condicional",
+        "que es un if else",
+        "para que sirve un if",
+        "que es la logica booleana en programacion",
+        "que es un condicional en programacion",
+        "ejemplo de if",
+        "que es un elif",
+        "operadores logicos cuales son",
+        "como funciona un if"
+      ],
+      "responses": [
+        "Un condicional if else es una estructura de control que permite que el programa tome decisiones: ejecuta un bloque de codigo si se cumple una condicion if, y opcionalmente otro bloque distinto si no se cumple else. Por ejemplo: si la edad es mayor o igual a 18, mostrar eres mayor de edad, si no, mostrar eres menor de edad.",
+        "La logica booleana usa operadores como AND y, OR o y NOT no para combinar varias condiciones dentro de un if, permitiendo tomar decisiones mas complejas basadas en mas de una comparacion al mismo tiempo.",
+        "En Python, la sintaxis es: if condicion: bloque elif otra_condicion: bloque else: bloque. El elif es una contraccion de else if y permite evaluar multiples condiciones en secuencia.",
+        "Los operadores de comparacion mas comunes son: igual a ==, diferente de !=, mayor que >, menor que <, mayor o igual que >=, menor o igual que <=."
+      ]
+    },
+    {
+      "tag": "info_funciones",
+      "patterns": [
+        "que es una funcion en programacion",
+        "para que sirve una funcion",
+        "que es un parametro",
+        "diferencia entre funcion y metodo",
+        "que es una funcion",
+        "como se crea una funcion",
+        "que es un argumento",
+        "funciones en python",
+        "return que es",
+        "que es el valor de retorno",
+        "funcion programacion definicion"
+      ],
+      "responses": [
+        "Una funcion es un bloque de codigo reutilizable que agrupa un conjunto de instrucciones para realizar una tarea especifica, y puede llamarse invocarse varias veces desde distintas partes del programa sin repetir el codigo. Las funciones ayudan a organizar mejor el programa y evitar duplicacion.",
+        "Un parametro es un valor que se le pasa a una funcion para que la use dentro de su logica, por ejemplo, una funcion sumar(a, b) recibe dos parametros y devuelve su suma. Un metodo es basicamente una funcion, pero que pertenece a un objeto o clase especifica en programacion orientada a objetos.",
+        "En Python, defines una funcion con: def nombre(parametros): bloque return valor. La palabra clave return devuelve un valor desde la funcion; si no usas return, la funcion retorna None.",
+        "Un argumento es el valor concreto que le pasas a la funcion cuando la llamas, mientras que el parametro es el nombre que recibe ese valor dentro de la funcion."
+      ]
+    },
+    {
+      "tag": "info_arreglos_listas",
+      "patterns": [
+        "que es un arreglo en programacion",
+        "que es una lista en programacion",
+        "diferencia entre array y lista",
+        "como recorro una lista",
+        "que es un array",
+        "que es una lista",
+        "metodos de listas",
+        "como agregar a una lista",
+        "como eliminar de una lista",
+        "listas en python"
+      ],
+      "responses": [
+        "Un arreglo o array es una estructura de datos que almacena multiples valores del mismo tipo bajo un solo nombre de variable, accesibles mediante un indice numerico que generalmente empieza en 0. Por ejemplo, en un arreglo de 3 elementos, el primer elemento esta en la posicion 0, el segundo en la 1, y el tercero en la 2.",
+        "Una lista es similar a un arreglo, pero en muchos lenguajes de programacion como Python es mas flexible: puede cambiar de tamaño dinamicamente y almacenar elementos de distintos tipos. Para recorrer una lista, normalmente se usa un bucle for que va accediendo a cada elemento uno por uno.",
+        "En Python, puedes crear una lista: mi_lista = [1, 2, 3, hola]. Para agregar elementos: mi_lista.append(4). Para eliminar: mi_lista.remove(2) o del mi_lista[0]. Para acceder a un elemento: mi_lista[1] devuelve el segundo elemento.",
+        "Existen tambien las tuplas, que son similares a las listas pero inmutables, es decir, no pueden modificarse despues de creadas. Se definen con parentesis: mi_tupla = (1, 2, 3)."
+      ]
+    },
+    {
+      "tag": "info_programacion_orientada_objetos",
+      "patterns": [
+        "que es la programacion orientada a objetos",
+        "que es una clase en programacion",
+        "que es un objeto en programacion",
+        "que es la herencia en poo",
+        "que es poo",
+        "pilares de la programacion orientada a objetos",
+        "que es encapsulamiento",
+        "que es polimorfismo",
+        "que es una clase",
+        "que es un objeto"
+      ],
+      "responses": [
+        "La programacion orientada a objetos POO es un paradigma de programacion que organiza el codigo en objetos, los cuales combinan datos atributos y comportamientos metodos relacionados entre si, imitando entidades del mundo real.",
+        "Una clase es como un molde o plantilla que define que atributos y metodos tendran los objetos creados a partir de ella. Un objeto es una instancia concreta de esa clase. Por ejemplo, una clase Coche puede tener atributos como color, marca y metodos como acelerar, frenar.",
+        "La herencia es un principio de la POO que permite que una clase hija reutilice y extienda el codigo de una clase padre, evitando duplicar logica comun. Por ejemplo, una clase CocheElectrico puede heredar de Coche y anadir nuevos metodos como cargarBateria.",
+        "Los pilares de la POO son: encapsulamiento, ocultar los detalles internos de un objeto; herencia, reutilizar codigo entre clases; polimorfismo, que un objeto pueda comportarse de diferentes formas segun el contexto; y abstraccion, mostrar solo la interfaz necesaria al usuario."
+      ]
+    },
+    {
+      "tag": "info_bases_datos",
+      "patterns": [
+        "que es una base de datos",
+        "que es sql",
+        "que es una tabla en una base de datos",
+        "diferencia entre base de datos relacional y no relacional",
+        "que es una base de datos relacional",
+        "que es nosql",
+        "query que es",
+        "consultas sql",
+        "como funciona una base de datos"
+      ],
+      "responses": [
+        "Una base de datos es un conjunto organizado de datos almacenados electronicamente, disenado para su facil acceso, gestion, busqueda y actualizacion. Se usa en casi todas las aplicaciones para guardar informacion de forma persistente, como usuarios, productos, transacciones, etc.",
+        "SQL Structured Query Language es el lenguaje estandar usado para consultar y manipular bases de datos relacionales, que organizan la informacion en tablas con filas y columnas relacionadas entre si. Las bases de datos no relacionales NoSQL, en cambio, almacenan datos en otros formatos como documentos JSON, y suelen usarse cuando se necesita mas flexibilidad o escalabilidad.",
+        "Una tabla en una base de datos relacional es como una hoja de calculo: tiene columnas que definen los atributos como nombre, edad, email y filas que contienen los registros de datos. Una consulta o query es una pregunta que le haces a la base de datos para obtener informacion especifica.",
+        "Ejemplos de bases de datos relacionales: MySQL, PostgreSQL, Oracle. Ejemplos de NoSQL: MongoDB documentos, Redis clave-valor, Cassandra columnas."
+      ]
+    },
+    {
+      "tag": "info_inteligencia_artificial",
+      "patterns": [
+        "que es la inteligencia artificial",
+        "que es machine learning",
+        "diferencia entre ia y machine learning",
+        "que es un modelo entrenado",
+        "que es ia",
+        "que es deep learning",
+        "que es una red neuronal",
+        "como funciona el machine learning",
+        "para que sirve la inteligencia artificial"
+      ],
+      "responses": [
+        "La inteligencia artificial IA es el campo de la computacion que busca crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como reconocer patrones, tomar decisiones o entender lenguaje natural.",
+        "El Machine Learning aprendizaje automatico es una rama de la IA donde los modelos aprenden patrones a partir de datos de ejemplo, en lugar de seguir reglas programadas explicitamente por un humano. Un modelo entrenado es el resultado de ese proceso: un sistema que aprendio de los datos y puede hacer predicciones sobre casos nuevos que no habia visto antes.",
+        "El Deep Learning aprendizaje profundo es una subrama del Machine Learning que usa redes neuronales con muchas capas para aprender patrones complejos, como reconocer imagenes o procesar lenguaje natural. Una red neuronal es un sistema computacional inspirado en el cerebro humano, formado por nodos neuronas interconectados.",
+        "Ejemplos de aplicaciones de IA: asistentes virtuales como Siri o Alexa, sistemas de recomendacion como los de Netflix o Amazon, reconocimiento facial, vehiculos autonomos y traduccion automatica."
+      ]
+    },
+    {
+      "tag": "info_redes_apis",
+      "patterns": [
+        "que es una red informatica",
+        "que es internet",
+        "que es una api",
+        "que es un servidor",
+        "que es un cliente en programacion",
+        "que es una peticion http",
+        "que es un endpoint",
+        "api rest que es",
+        "protocolos de red"
+      ],
+      "responses": [
+        "Una red informatica es un conjunto de dispositivos computadoras, servidores, routers conectados entre si para compartir informacion y recursos. Internet es la red mas grande del mundo, formada por millones de redes interconectadas a nivel global.",
+        "Una API Interfaz de Programacion de Aplicaciones es un conjunto de reglas que permite que dos programas se comuniquen entre si, por ejemplo, que una aplicacion movil pida datos a un servidor. El servidor es el programa o maquina que recibe y atiende esas solicitudes, mientras que el cliente es quien las envia y consume la informacion.",
+        "Una peticion HTTP es el mensaje que un cliente envia a un servidor para solicitar o enviar informacion, usando metodos como GET para obtener datos, POST para enviar datos, PUT para actualizar y DELETE para eliminar. Un endpoint es la URL especifica donde se accede a un recurso en una API.",
+        "REST Representational State Transfer es un estilo de arquitectura para disenar APIs que usa HTTP y sigue principios como recursos identificados por URLs, operaciones estandar y respuestas en formatos como JSON o XML."
+      ]
+    },
+    {
+      "tag": "info_control_versiones",
+      "patterns": [
+        "que es git",
+        "que es github",
+        "que es control de versiones",
+        "que es un commit",
+        "para que sirve git",
+        "git como funciona",
+        "que es un repositorio",
+        "git vs github",
+        "comandos basicos de git"
+      ],
+      "responses": [
+        "El control de versiones es un sistema que registra los cambios realizados en el codigo a lo largo del tiempo, permitiendo volver a versiones anteriores, comparar cambios y trabajar en equipo sin sobrescribir el trabajo de otros. Git es la herramienta de control de versiones mas usada actualmente.",
+        "GitHub es una plataforma en linea que aloja repositorios de Git, facilitando la colaboracion entre desarrolladores mediante funciones como pull requests, issues y control de acceso. Un commit es un registro puntual de los cambios hechos al codigo en un momento determinado, con un mensaje que describe que se modifico.",
+        "Un repositorio o repo es el lugar donde se almacena todo el codigo y su historial de cambios. Puede ser local en tu computadora o remoto en plataformas como GitHub, GitLab o Bitbucket. Los comandos basicos de Git son: git init para crear un repositorio, git add para preparar cambios, git commit para guardarlos, git push para subirlos y git pull para descargar cambios.",
+        "Git permite trabajar con ramas o branches, que son versiones paralelas del codigo para desarrollar nuevas funcionalidades sin afectar la version principal. Luego se fusionan mediante merges o pull requests cuando estan listas."
+      ]
+    }
+  ]
+}

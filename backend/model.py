@@ -1,102 +1,174 @@
+import json
+import pickle
+import random
+import re
+from pathlib import Path
 
-
-import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import joblib
-from dataset import obtener_dataset
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split
+
+from dataset import construir_dataset, normalizar_texto
+
+MODEL_PATH = Path(__file__).parent / "modelo_chatbot.pkl"
+METRICS_PATH = Path(__file__).parent / "metricas_entrenamiento.json"
+
+PARAMS_DEFAULT = {
+    "C": 4.5,
+    "ngram_max": 2,
+    "test_size": 0.2,
+    "umbral": 0.12,
+}
 
 
-class ChatbotModel:
+def entrenar_modelo(params: dict = None):
+    parametros = {**PARAMS_DEFAULT, **(params or {})}
+    X, y, respuestas = construir_dataset()
 
-    def __init__(self):
-        self.preguntas_entrenamiento = []
-        self.respuestas_entrenamiento = []
-        self.vectorizador = None
-        self.matriz_caracteristicas = None
-        self.exactitud = 0
+    if not X:
+        raise ValueError("No hay ejemplos disponibles para entrenar.")
 
-    def cargar_datos(self):
-        dataset = obtener_dataset()
-        self.preguntas_entrenamiento = [item["pregunta"] for item in dataset]
-        self.respuestas_entrenamiento = [item["respuesta"] for item in dataset]
-        print(f"Datos cargados: {len(self.preguntas_entrenamiento)} pares")
+    vectorizer = TfidfVectorizer(ngram_range=(1, parametros["ngram_max"]), sublinear_tf=True)
+    X_vec = vectorizer.fit_transform(X)
 
-    def entrenar(self):
-        print("Entrenando modelo...")
+    metricas = {
+        "parametros_usados": parametros,
+        "n_ejemplos": len(X),
+        "n_intenciones": len(respuestas),
+    }
 
-        # Vectorizador por palabras
-        self.vectorizador = TfidfVectorizer(
-            lowercase=True,
-            strip_accents="unicode",
-            ngram_range=(1, 2)
+    try:
+        X_train, X_test, y_train, y_test = train_test_split(
+            X_vec,
+            y,
+            test_size=parametros["test_size"],
+            random_state=42, # Se mantiene el estado aleatorio para reproducibilidad
+            stratify=y, # Asegura que la proporción de cada categoría se mantenga en train/test
+        )
+        hay_validacion = True
+    except ValueError:
+        X_train, X_test, y_train, y_test = X_vec, None, y, None
+        hay_validacion = False
+
+    # Corrección definitiva: solo dejamos solver="lbfgs" y max_iter para evitar el warning de convergencia
+    clasificador = LogisticRegression(C=parametros["C"], max_iter=3000, solver="lbfgs")
+    clasificador.fit(X_train, y_train)
+
+    if hay_validacion and X_test is not None and len(y_test) > 0:
+        y_pred = clasificador.predict(X_test)
+        metricas["accuracy"] = accuracy_score(y_test, y_pred)
+        metricas["reporte"] = classification_report(y_test, y_pred, zero_division=0, output_dict=True)
+        metricas["validacion_disponible"] = True
+    else:
+        y_pred_train = clasificador.predict(X_train)
+        metricas["accuracy_train"] = accuracy_score(y_train, y_pred_train)
+        metricas["validacion_disponible"] = False
+
+    with open(MODEL_PATH, "wb") as archivo:
+        pickle.dump(
+            {
+                "vectorizer": vectorizer,
+                "clasificador": clasificador,
+                "respuestas": respuestas,
+                "umbral": parametros["umbral"],
+                "parametros": parametros,
+            },
+            archivo,
         )
 
-        self.matriz_caracteristicas = self.vectorizador.fit_transform(
-            self.preguntas_entrenamiento
+    with open(METRICS_PATH, "w", encoding="utf-8") as archivo:
+        json.dump(metricas, archivo, ensure_ascii=False, indent=2)
+
+    return vectorizer, clasificador, respuestas, metricas
+
+
+def cargar_modelo():
+    with open(MODEL_PATH, "rb") as archivo:
+        datos = pickle.load(archivo)
+    return datos["vectorizer"], datos["clasificador"], datos["respuestas"], datos.get("umbral", 0.35)
+
+
+def cargar_metricas():
+    if not METRICS_PATH.exists():
+        return None
+    with open(METRICS_PATH, "r", encoding="utf-8") as archivo:
+        return json.load(archivo)
+
+
+def calcular_operacion_simple(texto: str):
+    patrones = [
+        (r"^(\d+)\s*(?:\+|mas)\s*(\d+)$", lambda a, b: int(a) + int(b), "+"),
+        (r"^(\d+)\s*(?:-|menos)\s*(\d+)$", lambda a, b: int(a) - int(b), "-"),
+        (r"^(\d+)\s*(?:x|por|\*)\s*(\d+)$", lambda a, b: int(a) * int(b), "×"),
+        (r"^(\d+)\s*(?:/|dividido)\s*(\d+)$", lambda a, b: None if int(b) == 0 else int(a) / int(b), "÷"),
+    ]
+    for patron, operacion, simbolo in patrones:
+        coincidencia = re.match(patron, texto)
+        if coincidencia:
+            a, b = coincidencia.groups()
+            resultado = operacion(a, b)
+            if resultado is None:
+                return "No puedo dividir entre cero.", None, 1.0
+            if simbolo == "÷" and isinstance(resultado, float) and resultado.is_integer():
+                resultado = int(resultado)
+            return f"{a} {simbolo} {b} = {resultado}", "mat_operaciones_basicas", 0.95
+    return None
+
+
+def es_consulta_ayuda_general(texto: str):
+    if re.search(r"\b(ayuda|ayudame|no entiendo|necesito ayuda|me puedes ayudar|dame ayuda|no se que|no sé que|puedes ayudarme)\b", texto):
+        return True
+    return False
+
+
+def predecir(texto: str, vectorizer, clasificador, respuestas, umbral: float = 0.35):
+    texto_norm = normalizar_texto(texto)
+    if not texto_norm:
+        return (
+            "No tengo suficiente información para responder con seguridad. Intenta reformular la pregunta con más detalle.",
+            "consulta_general",
+            0.0,
         )
 
-        # Métrica simple de exactitud
-        aciertos = 0
-        for i, pregunta in enumerate(self.preguntas_entrenamiento):
-            respuesta_encontrada, _ = self.encontrar_respuesta(pregunta)
-            if respuesta_encontrada == self.respuestas_entrenamiento[i]:
-                aciertos += 1
+    operacion = calcular_operacion_simple(texto_norm)
+    if operacion is not None:
+        return operacion
 
-        self.exactitud = (aciertos / len(self.preguntas_entrenamiento)) * 100
-        print(f"Exactitud: {self.exactitud:.2f}%")
+    if es_consulta_ayuda_general(texto_norm):
+        ayuda = respuestas.get("ayuda_general")
+        if ayuda:
+            return random.choice(ayuda), "ayuda_general", 0.85
+        return (
+            "Claro, dime qué parte necesitas que te explique y lo resolvemos juntos.",
+            "ayuda_general",
+            0.85,
+        )
 
-    def encontrar_respuesta(self, pregunta_usuario):
-        texto = pregunta_usuario.strip().lower()
+    X_vec = vectorizer.transform([texto_norm])
+    probas = clasificador.predict_proba(X_vec)[0]
+    indice_maximo = int(probas.argmax())
+    confianza = float(probas[indice_maximo])
+    etiqueta = clasificador.classes_[indice_maximo]
 
-        for pregunta, respuesta in zip(self.preguntas_entrenamiento, self.respuestas_entrenamiento):
-            if texto == pregunta.lower():
-                return respuesta, 1.0
+    if confianza < umbral:
+        return (
+            "No tengo suficiente información para responder con seguridad. Puedes reformular tu pregunta o pedir una explicación más general.",
+            etiqueta,
+            confianza,
+        )
 
-        pregunta_vectorizada = self.vectorizador.transform([pregunta_usuario])
-
-        similitudes = cosine_similarity(
-            pregunta_vectorizada,
-            self.matriz_caracteristicas
-        )[0]
-
-        indice_similar = np.argmax(similitudes)
-        confianza = similitudes[indice_similar]
-        respuesta = self.respuestas_entrenamiento[indice_similar]
-
-        return respuesta, float(confianza)
-
-    def obtener_metricas(self):
-        return {
-            "exactitud": round(self.exactitud, 2),
-            "preguntas_entrenamiento": len(self.preguntas_entrenamiento),
-            "tipo_modelo": "TF-IDF + Cosine Similarity",
-            "idioma": "Español"
-        }
-
-    def guardar(self, ruta="modelo_chatbot.pkl"):
-        joblib.dump(self, ruta)
-        print(f"Modelo guardado en {ruta}")
-
-    @staticmethod
-    def cargar(ruta="modelo_chatbot.pkl"):
-        return joblib.load(ruta)
-
-
-def entrenar_modelo():
-    modelo = ChatbotModel()
-    modelo.cargar_datos()
-    modelo.entrenar()
-    modelo.guardar()
-    return modelo
+    options = respuestas.get(etiqueta, ["No tengo una respuesta preparada para esta consulta."])
+    respuesta = random.choice(options)
+    return respuesta, etiqueta, confianza
 
 
 if __name__ == "__main__":
-    modelo = entrenar_modelo()
-
-    pregunta_test = "¿Qué es una variable?"
-    respuesta, confianza = modelo.encontrar_respuesta(pregunta_test)
-
-    print(f"\nPregunta: {pregunta_test}")
-    print(f"Respuesta: {respuesta}")
-    print(f"Confianza: {confianza:.2f}")
+    vectorizer, clasificador, respuestas, metricas = entrenar_modelo()
+    print("Modelo listo. Escribe una pregunta o 'salir' para terminar.")
+    while True:
+        texto = input("Tú: ")
+        if texto.lower() in {"salir", "exit", "quit"}:
+            break
+        respuesta, etiqueta, confianza = predecir(texto, vectorizer, clasificador, respuestas, metricas["parametros_usados"]["umbral"])
+        print(f"Bot [{etiqueta} | {confianza:.2f}]: {respuesta}\n")

@@ -1,0 +1,377 @@
+{
+  "intents": [
+    {
+      "tag": "mat_suma",
+      "patterns": [
+        "que es la suma",
+        "como se suman numeros",
+        "como sumo dos numeros grandes",
+        "que es sumar",
+        "ejemplo de una suma",
+        "propiedades de la suma cuales son",
+        "como sumo numeros decimales",
+        "como sumar",
+        "como resolver una suma",
+        "como hacer una suma",
+        "suma de numeros",
+        "definicion de suma",
+        "explicame la suma",
+        "que es sumar en matematicas",
+        "como se hace una suma con decimales",
+        "como sumar fracciones",
+        "suma con llevada como se hace",
+        "como sumar numeros grandes facil"
+      ],
+      "responses": [
+        "La suma es una operacion matematica basica que consiste en juntar dos o mas cantidades llamadas sumandos para obtener un resultado total llamado suma o total. Por ejemplo, si tienes 3 manzanas y te dan 2 mas, la suma es 3 mas 2 igual a 5. La suma tiene propiedades importantes: es conmutativa el orden no altera el resultado, 3 mas 2 es igual a 2 mas 3 y asociativa puedes agrupar los sumandos de distinta forma sin que cambie el total, como 2 mas 3 mas 4 es igual a 2 mas 3 mas 4.",
+        "Sumar significa combinar cantidades para saber cuanto hay en total. Para sumar numeros grandes, se suele alinear los numeros por su valor posicional unidades con unidades, decenas con decenas, centenas con centenas y sumar columna por columna de derecha a izquierda. Cuando la suma de una columna pasa de 9, se lleva la decena a la siguiente columna. Por ejemplo, 58 mas 37: 8 mas 7 igual 15, escribimos 5 y llevamos 1, luego 5 mas 3 mas 1 igual 9, resultado 95.",
+        "Para sumar numeros decimales, alinea las comas decimales verticalmente y suma como si fueran numeros enteros, manteniendo la coma en el mismo lugar en el resultado. Por ejemplo, 2.5 mas 3.75 igual 6.25. Si un numero tiene menos decimales, puedes agregar ceros para igualar, 2.50 mas 3.75 igual 6.25."
+      ]
+    },
+    {
+      "tag": "mat_resta",
+      "patterns": [
+        "que es la resta",
+        "como se restan numeros",
+        "que es restar",
+        "ejemplo de una resta",
+        "como resto numeros con llevada",
+        "que es el minuendo y el sustraendo",
+        "como restar",
+        "como hacer una resta",
+        "resta de numeros",
+        "que es la resta en matematicas",
+        "explicame la resta",
+        "resta con prestamo como se hace",
+        "como restar numeros grandes",
+        "como restar decimales",
+        "cuando se usa la resta",
+        "resta de fracciones"
+      ],
+      "responses": [
+        "La resta es la operacion que permite encontrar la diferencia entre dos cantidades. Al numero mayor se le llama minuendo, al que se resta se le llama sustraendo, y al resultado se le llama diferencia. Por ejemplo, en 8 menos 3 igual 5, el 8 es el minuendo, el 3 es el sustraendo y el 5 es la diferencia. A diferencia de la suma, la resta NO es conmutativa: 8 menos 3 no da el mismo resultado que 3 menos 8.",
+        "Restar significa quitar una cantidad de otra para saber cuanto queda. Cuando la cifra de arriba minuendo en una columna es menor que la de abajo sustraendo, se hace un prestamo de la columna siguiente: se toma 1 de la cifra de la izquierda que equivale a 10 en esa columna y se suma a la cifra actual. Por ejemplo, 52 menos 27: en unidades 2 es menor que 7, pedimos prestado a las decenas el 5 se convierte en 4, ahora 12 menos 7 igual 5, en decenas 4 menos 2 igual 2, resultado 25.",
+        "Para restar decimales, alinea las comas decimales y resta como si fueran numeros enteros. Si es necesario, agrega ceros para que ambos numeros tengan la misma cantidad de decimales. Por ejemplo, 5.3 menos 2.75 igual 5.30 menos 2.75 igual 2.55."
+      ]
+    },
+    {
+      "tag": "mat_multiplicacion",
+      "patterns": [
+        "que es la multiplicacion",
+        "como se multiplican numeros",
+        "que es multiplicar",
+        "tabla de multiplicar como funciona",
+        "propiedades de la multiplicacion cuales son",
+        "como multiplico numeros de dos cifras",
+        "como multiplicar",
+        "como resolver una multiplicacion",
+        "multiplicacion de numeros",
+        "que es multiplicar en matematicas",
+        "explicame la multiplicacion",
+        "como multiplicar numeros grandes",
+        "multiplicacion por dos cifras paso a paso",
+        "propiedades de la multiplicacion",
+        "elemento neutro de la multiplicacion",
+        "como multiplicar fracciones"
+      ],
+      "responses": [
+        "La multiplicacion es una operacion que representa una suma repetida: multiplicar 4 por 3 equivale a sumar 4 tres veces, 4 mas 4 mas 4 igual 12. A los numeros que se multiplican se les llama factores, y al resultado se le llama producto. La multiplicacion es conmutativa, 4 por 3 igual 3 por 4, y asociativa, 2 por 3 por 4 igual 2 por 3 por 4. Tambien tiene un elemento neutro que es el 1, cualquier numero multiplicado por 1 da el mismo numero, y un elemento absorbente que es el 0, cualquier numero multiplicado por 0 da 0.",
+        "Para multiplicar numeros de dos cifras, se multiplica cada digito del segundo numero por todo el primer numero, se van desplazando los resultados parciales una posicion a la izquierda por cada cifra agregando un cero al final de cada fila, y finalmente se suman todos los resultados parciales. Por ejemplo, 23 por 45: primero 23 por 5 igual 115, luego 23 por 4 igual 92, pero como es la decena, se escribe 920, y al sumar 115 mas 920 igual 1035.",
+        "Las tablas de multiplicar son la base para multiplicar con fluidez. Son listas que muestran el producto de numeros del 1 al 10. Por ejemplo, la tabla del 7: 7 por 1 igual 7, 7 por 2 igual 14, 7 por 3 igual 21. Memorizarlas ayuda a hacer calculos mentales mas rapido."
+      ]
+    },
+    {
+      "tag": "mat_division",
+      "patterns": [
+        "que es la division",
+        "como se dividen numeros",
+        "que es dividir",
+        "que es el dividendo y el divisor",
+        "como hago una division larga",
+        "que es el residuo o resto de una division",
+        "como dividir",
+        "como hacer una division",
+        "division de numeros",
+        "que es dividir en matematicas",
+        "explicame la division",
+        "division larga paso a paso",
+        "que es el cociente en una division",
+        "como dividir con decimales",
+        "como dividir fracciones",
+        "division exacta e inexacta"
+      ],
+      "responses": [
+        "La division es la operacion inversa a la multiplicacion: reparte una cantidad llamada dividendo en partes iguales segun otra cantidad llamada divisor, dando como resultado un cociente. Por ejemplo, 12 dividido para 3 igual 4 significa que 12 se reparte en 3 partes iguales de 4. Si la division no es exacta, sobra una cantidad llamada residuo o resto, que siempre debe ser menor que el divisor. Por ejemplo, 13 dividido para 3 igual 4 como cociente y sobra 1 como residuo.",
+        "Para hacer una division larga, se va dividiendo cifra por cifra del dividendo entre el divisor. Se busca cuantas veces cabe el divisor en la cifra actual, se multiplica el divisor por ese numero, se resta y se baja la siguiente cifra. Este proceso se repite hasta que no queden mas cifras. Por ejemplo, 1275 dividido para 5: 5 cabe 2 veces en 12, 2 por 5 igual 10, resto 2, bajamos el 7, 27, 5 cabe 5 veces en 27, 25, resto 2, bajamos el 5, 25, 5 cabe 5 veces en 25, 25, resto 0, resultado 255.",
+        "Cuando el dividendo o el divisor tienen decimales, se puede multiplicar ambos por 10, 100 o 1000 segun sea necesario para convertirlos en numeros enteros y luego dividir normalmente. Por ejemplo, 4.5 dividido para 1.5 se convierte en 45 dividido para 15 igual 3."
+      ]
+    },
+    {
+      "tag": "mat_fracciones",
+      "patterns": [
+        "que es una fraccion",
+        "como se suman fracciones",
+        "como se simplifica una fraccion",
+        "que es el numerador",
+        "que es el denominador",
+        "como divido fracciones",
+        "fracciones equivalentes que son",
+        "como multiplico fracciones",
+        "como operar fracciones",
+        "como resolver fracciones",
+        "que es una fraccion propia e impropia",
+        "como sumar fracciones con diferente denominador",
+        "como restar fracciones",
+        "que es el minimo comun multiplo",
+        "como simplificar una fraccion paso a paso"
+      ],
+      "responses": [
+        "Una fraccion representa una parte de un todo dividido en partes iguales. Se escribe como numerador sobre denominador, donde el numerador arriba indica cuantas partes se toman y el denominador abajo indica en cuantas partes se divide el total. Por ejemplo, 3/4 significa que un total se dividio en 4 partes y se toman 3 de ellas. Una fraccion propia tiene el numerador menor que el denominador, 3/4, y una impropia tiene el numerador mayor que el denominador, 5/4.",
+        "Para sumar o restar fracciones, deben tener el mismo denominador. Si no lo tienen, se busca el minimo comun multiplo MCM de los denominadores para convertirlas a fracciones equivalentes con un denominador comun. Por ejemplo, para sumar 1/2 mas 1/3, el MCM de 2 y 3 es 6, asi que 1/2 igual 3/6 y 1/3 igual 2/6, entonces 3/6 mas 2/6 igual 5/6.",
+        "Para multiplicar fracciones se multiplican los numeradores entre si y los denominadores entre si: 2/3 por 4/5 igual 2 por 4 sobre 3 por 5 igual 8/15. Para dividir fracciones, se multiplica la primera fraccion por el reciproco invertido de la segunda: 2/3 dividido para 4/5 igual 2/3 por 5/4 igual 10/12 igual 5/6.",
+        "Simplificar una fraccion significa dividir el numerador y el denominador entre su maximo comun divisor MCD para obtener una fraccion equivalente con numeros mas pequenos. Por ejemplo, 12/18, el MCD de 12 y 18 es 6, asi que 12 dividido 6 igual 2 y 18 dividido 6 igual 3, entonces 12/18 se simplifica a 2/3."
+      ]
+    },
+    {
+      "tag": "mat_ecuaciones",
+      "patterns": [
+        "que es una ecuacion",
+        "como resuelvo una ecuacion de primer grado",
+        "que es una incognita",
+        "como despejo x",
+        "que es una ecuacion lineal",
+        "como resuelvo ecuaciones de segundo grado",
+        "formula general de la ecuacion cuadratica",
+        "como resolver una ecuacion paso a paso",
+        "que es una ecuacion con una incognita",
+        "metodos para resolver ecuaciones",
+        "ecuacion de primer grado ejemplos",
+        "que es el discriminante en una ecuacion cuadratica"
+      ],
+      "responses": [
+        "Una ecuacion es una igualdad matematica entre dos expresiones que contiene una o mas incognitas usualmente representadas con letras como x, y, z. Resolver una ecuacion significa encontrar el valor o valores de la incognita que hacen que la igualdad sea verdadera. Por ejemplo, en la ecuacion 2x mas 3 igual 7, debemos encontrar el valor de x que cumple la igualdad.",
+        "Para resolver una ecuacion de primer grado lineal, se deben despejar la incognita aplicando operaciones inversas a ambos lados de la igualdad. Lo que suma, se resta en ambos lados, lo que multiplica, se divide en ambos lados, lo que esta dentro de un parentesis, se distribuye. Por ejemplo, 2x mas 3 igual 7, 2x igual 7 menos 3, 2x igual 4, x igual 4/2, x igual 2.",
+        "Una ecuacion de segundo grado tiene la forma ax al cuadrado mas bx mas c igual 0, donde a, b y c son numeros y a es diferente de 0. Se puede resolver con la formula general: x igual menos b mas menos raiz cuadrada de b al cuadrado menos 4ac, todo sobre 2a. El termino discriminante b al cuadrado menos 4ac determina las soluciones: si es positivo, hay dos soluciones reales distintas, si es cero, hay una solucion doble, si es negativo, no hay soluciones reales son imaginarias.",
+        "Ejemplo de ecuacion cuadratica: x al cuadrado menos 5x mas 6 igual 0, donde a igual 1, b igual menos 5, c igual 6. El discriminante es menos 5 al cuadrado menos 4 por 1 por 6 igual 25 menos 24 igual 1, positivo, dos soluciones. Soluciones: x igual 5 mas menos raiz de 1 sobre 2, x igual 5 mas 1 sobre 2 igual 3 y x igual 5 menos 1 sobre 2 igual 2."
+      ]
+    },
+    {
+      "tag": "mat_algebra",
+      "patterns": [
+        "que es algebra",
+        "como factorizo una expresion",
+        "que es un polinomio",
+        "que es un monomio",
+        "como sumo polinomios",
+        "productos notables cuales son",
+        "que es el algebra y para que sirve",
+        "como se factoriza un polinomio",
+        "que son los terminos semejantes",
+        "como restar polinomios",
+        "como multiplicar polinomios",
+        "que es un binomio y un trinomio"
+      ],
+      "responses": [
+        "El algebra es la rama de las matematicas que usa letras y simbolos llamados variables para representar numeros y relaciones entre ellos, permitiendo generalizar operaciones y resolver problemas donde algunos valores son desconocidos. Un monomio es una expresion algebraica con un solo termino como 5x al cuadrado, un binomio tiene dos terminos como 3x mas 2, un trinomio tiene tres terminos como x al cuadrado mas 3x menos 2, y un polinomio es una suma de varios monomios como 5x al cuadrado mas 3x menos 2.",
+        "Factorizar una expresion algebraica significa reescribirla como un producto de factores mas simples, lo cual es util para simplificar expresiones o resolver ecuaciones. Por ejemplo, x al cuadrado mas 5x mas 6 se factoriza como x mas 2 por x mas 3. Para factorizar, se busca un factor comun, se usan productos notables o se aplican metodos como el aspa simple o la formula general.",
+        "Los productos notables son formulas de multiplicacion que se repiten con frecuencia y ayudan a operar mas rapido. Los mas importantes son: el cuadrado de un binomio a mas b al cuadrado igual a al cuadrado mas 2ab mas b al cuadrado, el cubo de un binomio a mas b al cubo igual a al cubo mas 3a al cuadrado b mas 3ab al cuadrado mas b al cubo, y la diferencia de cuadrados a mas b por a menos b igual a al cuadrado menos b al cuadrado.",
+        "Para sumar o restar polinomios, se agrupan los terminos semejantes, aquellos que tienen la misma variable elevada al mismo exponente, y se operan sus coeficientes. Por ejemplo, 3x al cuadrado mas 2x menos 1 mas x al cuadrado menos 3x mas 4 igual 3x al cuadrado mas x al cuadrado mas 2x menos 3x mas menos 1 mas 4 igual 4x al cuadrado menos x mas 3."
+      ]
+    },
+    {
+      "tag": "mat_geometria",
+      "patterns": [
+        "que es geometria",
+        "como calculo el area de un triangulo",
+        "como calculo el perimetro de un circulo",
+        "teorema de pitagoras que es",
+        "como calculo el area de un circulo",
+        "que es un angulo",
+        "que es la geometria y para que sirve",
+        "como calcular el area de un cuadrado",
+        "como calcular el area de un rectangulo",
+        "como se calcula el volumen de un cubo",
+        "que es una figura geometrica",
+        "que es un poligono",
+        "formulas de areas y perimetros"
+      ],
+      "responses": [
+        "La geometria es la rama de las matematicas que estudia las figuras, sus formas, tamanos, posiciones y propiedades en el espacio. Se divide en geometria plana, figuras en dos dimensiones como triangulos, cuadrados, circulos, y geometria del espacio, figuras en tres dimensiones como cubos, esferas, cilindros.",
+        "El area de una figura es la medida de su superficie, mientras que el perimetro es la medida de su contorno, suma de todos sus lados. Formulas importantes: area del cuadrado igual lado al cuadrado, perimetro igual 4 por lado, area del rectangulo igual base por altura, perimetro igual 2 por base mas altura, area del triangulo igual base por altura dividido 2, area del circulo igual pi por radio al cuadrado, perimetro circunferencia igual 2 por pi por radio.",
+        "El teorema de Pitagoras dice que en un triangulo rectangulo, uno que tiene un angulo de 90 grados, el cuadrado de la hipotenusa, el lado mas largo, opuesto al angulo recto, es igual a la suma de los cuadrados de los otros dos lados llamados catetos: a al cuadrado mas b al cuadrado igual c al cuadrado. Este teorema se usa para encontrar longitudes desconocidas en triangulos rectangulos.",
+        "El volumen de un cuerpo en 3D mide el espacio que ocupa. Formulas basicas: volumen del cubo igual lado al cubo, volumen del prisma rectangular igual largo por ancho por alto, volumen de la esfera igual 4/3 por pi por radio al cubo, volumen del cilindro igual pi por radio al cuadrado por altura."
+      ]
+    },
+    {
+      "tag": "mat_numeros_primos",
+      "patterns": [
+        "que es un numero primo",
+        "que numeros son primos",
+        "como se si un numero es primo",
+        "que es un numero compuesto",
+        "diferencia entre numero primo y compuesto",
+        "lista de numeros primos",
+        "que son los numeros primos y compuestos",
+        "para que sirven los numeros primos",
+        "como saber si un numero es primo facil"
+      ],
+      "responses": [
+        "Un numero primo es aquel mayor a 1 que solo puede dividirse exactamente por 1 y por si mismo, sin dejar residuo con ningun otro numero. Los primeros numeros primos son: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37. El 2 es el unico numero primo par, todos los demas numeros primos son impares.",
+        "Un numero compuesto es aquel mayor a 1 que tiene mas de dos divisores, es decir, puede dividirse exactamente por al menos otro numero ademas de 1 y de si mismo. Por ejemplo, 4 tiene divisores 1, 2, 4, 6 tiene 1, 2, 3, 6, 8 tiene 1, 2, 4, 8, 9 tiene 1, 3, 9. El numero 1 no es primo ni compuesto.",
+        "Para saber si un numero es primo, puedes intentar dividirlo entre los numeros primos menores o iguales a su raiz cuadrada. Si ninguno de esos primos lo divide exactamente, entonces el numero es primo. Por ejemplo, para ver si 17 es primo, probamos con 2, 3, 5, la raiz cuadrada de 17 es aproximadamente 4.12, asi que probamos primos hasta 5. 17 no es divisible por 2, 3 ni 5, asi que es primo.",
+        "Los numeros primos son muy importantes en matematicas y criptografia, ya que son los bloques de construccion de todos los numeros enteros a traves de la factorizacion unica: cualquier numero entero mayor a 1 se puede descomponer como producto unico de numeros primos, por ejemplo 60 igual 2 por 2 por 3 por 5."
+      ]
+    },
+    {
+      "tag": "mat_derivadas",
+      "patterns": [
+        "que es una derivada",
+        "para que sirve una derivada",
+        "como se deriva una funcion",
+        "que es el calculo diferencial",
+        "regla de la cadena que es",
+        "que es una derivada en calculo",
+        "como calcular la derivada de una funcion",
+        "que significa la derivada geometricamente",
+        "reglas de derivacion basicas",
+        "derivada de una potencia",
+        "derivada de seno y coseno"
+      ],
+      "responses": [
+        "Una derivada mide la tasa de cambio instantanea de una funcion en un punto especifico. Geometricamente, representa la pendiente de la recta tangente a la curva de la funcion en ese punto. Por ejemplo, si tienes una funcion que describe la posicion de un auto en el tiempo, su derivada te da la velocidad instantanea en cada momento.",
+        "Las reglas basicas de derivacion son: la derivada de una constante es 0, la derivada de x elevado a n es n por x elevado a n menos 1, regla de la potencia, la derivada de seno de x es coseno de x, la derivada de coseno de x es menos seno de x, la derivada de e elevado a x es e elevado a x, la derivada de logaritmo natural de x es 1 sobre x.",
+        "La regla de la cadena es una tecnica para derivar funciones compuestas, una funcion dentro de otra: si tienes f de g de x, su derivada es f prima de g de x por g prima de x. Por ejemplo, para derivar 2x mas 1 al cubo, identificamos f de u igual u al cubo y g de x igual 2x mas 1, entonces f prima de u igual 3u al cuadrado y g prima de x igual 2, asi que la derivada es 3 por 2x mas 1 al cuadrado por 2 igual 6 por 2x mas 1 al cuadrado.",
+        "El calculo diferencial es la rama del calculo que estudia las derivadas y sus aplicaciones. Se usa en fisica como velocidad, aceleracion, en economia como costos marginales, elasticidad, en biologia como tasas de crecimiento de poblaciones y muchas otras areas para analizar como cambian las cantidades."
+      ]
+    },
+    {
+      "tag": "mat_porcentajes",
+      "patterns": [
+        "como calculo un porcentaje",
+        "que es un porcentaje",
+        "como saco el 20 por ciento de un numero",
+        "como calculo un descuento",
+        "regla de tres que es",
+        "cuanto es el 10 por ciento de 100",
+        "cuanto es el 20 por ciento de 50",
+        "cuanto es el 50 por ciento de 80",
+        "que es el 25 por ciento",
+        "como sacar porcentaje",
+        "que es el porcentaje y para que sirve",
+        "como calcular el porcentaje de una cantidad",
+        "como se usa la regla de tres simple",
+        "calcular porcentaje de aumento",
+        "como sacar el iva de un precio"
+      ],
+      "responses": [
+        "Un porcentaje representa una parte de 100, el simbolo por ciento significa de cada 100. Por ejemplo, el 25 por ciento significa 25 de cada 100. Para calcular el X por ciento de un numero, multiplicas el numero por X y divides entre 100. Ejemplos: el 10 por ciento de 100 es 100 por 10 dividido 100 igual 10, el 20 por ciento de 50 es 50 por 20 dividido 100 igual 10, el 50 por ciento de 80 es 80 por 50 dividido 100 igual 40.",
+        "Para calcular un descuento, primero calculas el porcentaje de descuento sobre el precio original y luego lo restas. Por ejemplo, si un producto cuesta 80 dolares y tiene un 15 por ciento de descuento, el descuento es 80 por 15 dividido 100 igual 12 dolares, y el precio final es 80 menos 12 igual 68 dolares.",
+        "La regla de tres es un metodo para encontrar un valor desconocido a partir de una proporcion entre dos magnitudes conocidas. Por ejemplo, si 5 manzanas cuestan 10 dolares, cuanto cuestan 8 manzanas. Se plantea: 5 corresponde a 10, 8 corresponde a x. Se multiplica en cruz: 5 por x igual 8 por 10, 5x igual 80, x igual 16. Asi que 8 manzanas cuestan 16 dolares.",
+        "Para calcular el IVA Impuesto al Valor Agregado, que en muchos paises es del 12 o 19 por ciento, se multiplica el precio por la tasa de IVA. Por ejemplo, si un producto cuesta 50 dolares y el IVA es del 19 por ciento, el IVA es 50 por 19 dividido 100 igual 9.50 dolares, y el precio total con IVA es 50 mas 9.50 igual 59.50 dolares."
+      ]
+    },
+    {
+      "tag": "mat_trigonometria",
+      "patterns": [
+        "que es trigonometria",
+        "que es el seno coseno y tangente",
+        "para que sirve la trigonometria",
+        "que es un triangulo rectangulo",
+        "que es el coseno",
+        "que es el seno",
+        "que es la tangente",
+        "que es la trigonometria y para que sirve",
+        "como se usan el seno y el coseno",
+        "que son las razones trigonometricas",
+        "como calcular seno y coseno",
+        "teorema del seno y del coseno",
+        "funciones trigonometricas basicas"
+      ],
+      "responses": [
+        "La trigonometria estudia las relaciones entre los angulos y los lados de los triangulos, especialmente los triangulos rectangulos, los que tienen un angulo de 90 grados. Se usa mucho en ingenieria, arquitectura, navegacion, astronomia y fisica para calcular distancias y alturas que serian dificiles de medir directamente.",
+        "Las razones trigonometricas son relaciones entre los lados de un triangulo rectangulo respecto a uno de sus angulos agudos. Para un angulo theta: seno igual cateto opuesto sobre hipotenusa, coseno igual cateto adyacente sobre hipotenusa, tangente igual cateto opuesto sobre cateto adyacente. Tambien existen la cosecante que es 1 sobre seno, secante que es 1 sobre coseno y cotangente que es 1 sobre tangente.",
+        "Ejemplo: en un triangulo rectangulo donde el angulo theta mide 30 grados, el seno de 30 grados igual 1/2, coseno de 30 grados igual raiz de 3 sobre 2, y tangente de 30 grados igual 1 sobre raiz de 3. Estos valores se usan para calcular alturas o distancias sin necesidad de medir fisicamente.",
+        "El teorema del seno y el teorema del coseno son extensiones de la trigonometria para triangulos que no son rectangulos. El teorema del coseno dice: c al cuadrado igual a al cuadrado mas b al cuadrado menos 2ab por coseno de C, donde C es el angulo opuesto al lado c. El teorema del seno dice: a sobre seno de A igual b sobre seno de B igual c sobre seno de C."
+      ]
+    },
+    {
+      "tag": "mat_funciones",
+      "patterns": [
+        "que es una funcion matematica",
+        "que es una funcion en matematicas",
+        "para que sirve una funcion",
+        "tipos de funciones cuales son",
+        "que es el dominio y el rango de una funcion",
+        "que es una funcion lineal",
+        "que es una funcion cuadratica",
+        "como identificar una funcion",
+        "que es el dominio de una funcion",
+        "que es el rango de una funcion",
+        "grafica de una funcion lineal",
+        "grafica de una funcion cuadratica",
+        "que es una funcion exponencial",
+        "que es una funcion logaritmica",
+        "funcion matematica definicion",
+        "que es el dominio",
+        "que es el rango"
+      ],
+      "responses": [
+        "Una funcion matematica es una regla que asigna a cada elemento de un conjunto de entrada, llamado dominio, exactamente un elemento de un conjunto de salida, llamado rango. En otras palabras, a cada valor de x le corresponde un unico valor de y. Por ejemplo, la funcion f de x igual 2x mas 1 asigna a cada numero x el doble mas uno.",
+        "El dominio de una funcion son todos los valores de x para los cuales la funcion esta definida, es decir, los valores de entrada permitidos. El rango son todos los valores de y que la funcion puede tomar, los valores de salida. Por ejemplo, en f de x igual x al cuadrado, el dominio son todos los numeros reales, pero el rango son solo los numeros mayores o iguales a 0.",
+        "Existen varios tipos de funciones: lineal, y igual mx mas b, grafica una linea recta; cuadratica, y igual ax al cuadrado mas bx mas c, grafica una parabola; exponencial, y igual a elevado a x; logaritmica, y igual logaritmo base a de x; trigonometrica como seno, coseno, tangente; y polinomial, suma de varios terminos. Cada una describe un comportamiento diferente.",
+        "Para identificar una funcion en una grafica, se usa la prueba de la linea vertical: si una linea vertical toca la grafica en mas de un punto, entonces no es una funcion, porque un valor de x tendria mas de un valor de y."
+      ]
+    },
+    {
+      "tag": "mat_operaciones_basicas",
+      "patterns": [
+        "cual es la respuesta de 2 mas 2",
+        "cuanto es 2 mas 2",
+        "cuanto da 2 mas 2",
+        "cuanto es 3 mas 4",
+        "cuanto es 6 menos 2",
+        "cuanto da 8 menos 3",
+        "cuanto es 4 por 5",
+        "cuanto da 4 por 5",
+        "cuanto es 12 dividido para 3",
+        "cuanto da 12 dividido 3",
+        "cuanto es 10 dividido para 2",
+        "cuanto es 7 mas 1",
+        "cuanto es 9 menos 1",
+        "cuanto es 2 por 6",
+        "cuanto es 15 dividido para 5",
+        "cual es el resultado de 5 mas 5",
+        "cual es el resultado de 9 menos 4",
+        "cual es el resultado de 6 por 3",
+        "cual es el resultado de 18 dividido 2",
+        "resuelve 2 mas 2",
+        "resuelve 5 menos 3",
+        "resuelve 3 por 4",
+        "resuelve 16 dividido 4",
+        "que resultado da 2 mas 2",
+        "que resultado da 7 menos 2",
+        "que resultado da 3 por 3",
+        "que resultado da 20 dividido para 4",
+        "ayuda con una operacion simple",
+        "hago una suma simple",
+        "hago una resta simple",
+        "hago una multiplicacion simple",
+        "hago una division simple",
+        "cuanto es 25 mas 13",
+        "cuanto es 100 menos 45",
+        "cuanto es 8 por 7",
+        "cuanto es 144 dividido 12",
+        "calcula 12 mas 8",
+        "calcula 50 menos 23",
+        "calcula 6 por 9",
+        "calcula 81 dividido 9"
+      ],
+      "responses": [
+        "Las operaciones basicas son suma, resta, multiplicacion y division. Aqui tienes algunos ejemplos: 2 mas 2 igual 4, 5 menos 3 igual 2, 3 por 4 igual 12, 12 dividido para 3 igual 4. Necesitas que resuelva alguna operacion en particular.",
+        "Claro, resuelvo operaciones simples: 2 mas 2 igual 4, 7 menos 2 igual 5, 3 por 3 igual 9, 16 dividido para 4 igual 4. Si tienes una operacion especifica, dimela y la resuelvo paso a paso.",
+        "Para operaciones basicas, se aplica: suma para unir cantidades, resta para quitar, multiplicacion para suma repetida y division para repartir en partes iguales. Por ejemplo, 5 mas 5 igual 10, 9 menos 4 igual 5, 6 por 3 igual 18, 18 dividido para 2 igual 9.",
+        "Si, claro. Los resultados son: 25 mas 13 igual 38, 100 menos 45 igual 55, 8 por 7 igual 56, 144 dividido para 12 igual 12. Puedo ayudarte con cualquier operacion que necesites."
+      ]
+    }
+  ]
+}

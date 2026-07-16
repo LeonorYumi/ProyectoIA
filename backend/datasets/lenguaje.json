@@ -1,0 +1,45 @@
+{
+  "intents": [
+    {
+      "tag": "leng_sustantivo",
+      "patterns": ["que es un sustantivo", "tipos de sustantivos cuales son", "que es un sustantivo propio", "que es un sustantivo comun", "ejemplos de sustantivos", "cual es la diferencia entre sustantivo propio y comun", "que son los sustantivos abstractos", "sustantivos concretos que son", "cual es un sustantivo colectivo", "que es un sustantivo individual", "ejemplos de sustantivos propios", "ejemplos de sustantivos comunes", "que es un sustantivo compuesto", "cuales son los tipos de sustantivos", "ejemplos de sustantivos abstractos"],
+      "responses": ["Un sustantivo es la palabra que nombra personas, animales, lugares o cosas, por ejemplo: perro, Quito, mesa.", "Los sustantivos pueden ser propios (nombran algo específico, como 'María') o comunes (nombran algo genérico, como 'niña')."]
+    },
+    {
+      "tag": "leng_verbo",
+      "patterns": ["que es un verbo", "tipos de verbos cuales son", "que es un verbo conjugado", "que es el infinitivo de un verbo", "ejemplos de verbos", "que es un verbo transitivo", "que es un verbo intransitivo", "como se conjugan los verbos", "que es un verbo regular", "que es un verbo irregular", "cual es la diferencia entre verbo y adjetivo"],
+      "responses": ["Un verbo es la palabra que expresa una acción, estado o proceso, por ejemplo: correr, ser, pensar.", "El infinitivo es la forma no conjugada del verbo y siempre termina en -ar, -er o -ir (ej. cantar, comer, vivir)."]
+    },
+    {
+      "tag": "leng_sujeto_predicado",
+      "patterns": ["que es el sujeto de una oracion", "que es el predicado", "como identifico el sujeto en una oracion", "partes de una oracion cuales son", "como encontrar el sujeto y predicado", "que es el complemento directo", "que es el complemento indirecto", "que es una oración simple"],
+      "responses": ["El sujeto es quien realiza la acción en la oración, y el predicado es todo lo que se dice sobre el sujeto (normalmente incluye el verbo).", "Para identificar el sujeto, preguntas '¿quién realiza la acción?'; el resto de la oración suele ser el predicado."]
+    },
+    {
+      "tag": "leng_figuras_literarias",
+      "patterns": ["que es una metafora", "que es un simil", "que son las figuras literarias", "que es una hiperbole", "diferencia entre metafora y simil"],
+      "responses": ["Las figuras literarias son recursos que usan los escritores para embellecer o dar más fuerza al lenguaje, como la metáfora, el símil y la hipérbole.", "La metáfora compara dos cosas sin usar 'como' (ej. 'sus ojos son estrellas'), mientras el símil sí usa 'como' (ej. 'sus ojos brillan como estrellas')."]
+    },
+    {
+      "tag": "leng_ortografia_tildes",
+      "patterns": ["cuando lleva tilde una palabra", "que es una palabra aguda", "que es una palabra grave", "que es una palabra esdrujula", "reglas de acentuacion cuales son"],
+      "responses": ["Las palabras agudas llevan tilde si terminan en n, s o vocal (ej. camión); las graves si NO terminan en n, s o vocal (ej. árbol); las esdrújulas siempre llevan tilde (ej. médico).", "La acentuación depende de dónde cae la sílaba tónica: agudas (última sílaba), graves (penúltima) y esdrújulas (antepenúltima)."]
+    },
+    {
+      "tag": "leng_generos_literarios",
+      "patterns": ["cuales son los generos literarios", "que es el genero narrativo", "que es el genero lirico", "que es el genero dramatico", "diferencia entre novela y cuento"],
+      "responses": ["Los tres géneros literarios principales son: narrativo (cuentos, novelas), lírico (poesía) y dramático (obras de teatro).", "Una novela es una narración larga con tramas complejas, mientras que un cuento es más breve y suele centrarse en un solo conflicto."]
+    },
+     {
+      "tag": "leng_lematizacion",
+      "patterns": ["que es la lematizacion", "lematizacion", "que es lematizacion", "como se lematiza una palabra", "como se hace la lematizacion", "que es el lema de una palabra", "diferencia entre lema y forma inflexional"],
+      "responses": ["La lematización es el proceso de reducir las palabras a su forma básica o lema (por ejemplo, 'corriendo' se lematiza como 'correr').", "El lema es la forma básica de una palabra, mientras que la forma inflexional es la variación que toma según su uso en la oración."]
+    },
+
+     {
+      "tag": "leng_ia",
+      "patterns": ["que es la IA", "IA"],
+      "responses": ["La inteligencia artificial es la simulación de procesos mentales humanos por parte de máquinas, especialmente sistemas informáticos.", "El lema es la forma básica de una palabra, mientras que la forma inflexional es la variación que toma según su uso en la oración."]
+    }
+  ]
+}

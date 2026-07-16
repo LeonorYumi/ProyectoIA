@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": ["hola", "buenas", "buenos dias", "buenas tardes", "buenas noches", "hey", "que tal", "hola profe", "hola bot", "saludos", "buen dia", "buenas estimado", "hola que tal", "hola necesito ayuda", "hola puedo preguntar algo", "buenas tardes necesito ayuda"],
+      "responses": ["¡Hola! Soy tu asistente educativo. ¿En qué tema te ayudo hoy?", "¡Buenas! Cuéntame qué necesitas estudiar y te ayudo.", "Hola, ¿en qué materia necesitas apoyo?"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["adios", "chao", "nos vemos", "hasta luego", "bye", "me voy", "gracias adios", "hasta pronto", "me despido", "hasta la proxima", "adios gracias", "chau", "me retiro"],
+      "responses": ["¡Hasta luego! Sigue estudiando, vas muy bien.", "Nos vemos, cualquier duda vuelve por aquí.", "¡Chao! Éxitos en tus estudios."]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": ["gracias", "muchas gracias", "te lo agradezco", "genial gracias", "perfecto muchas gracias", "mil gracias", "gracias por la ayuda", "thanks", "agradezco tu ayuda", "gracias por explicarme"],
+      "responses": ["¡Con gusto! Para eso estoy.", "De nada, avísame si necesitas algo más."]
+    },
+    {
+      "tag": "identidad_bot",
+      "patterns": ["quien eres", "que eres", "eres un robot", "como te llamas", "que puedes hacer", "eres una ia", "para que sirves", "como te llamas bot", "eres inteligente", "puedes ayudarme"],
+      "responses": ["Soy un chatbot educativo entrenado para ayudarte con dudas de estudio en varias materias.", "Soy tu asistente virtual de aprendizaje, puedo explicarte conceptos de matemáticas, ciencias, historia, lenguaje, geografía e informática."]
+    },
+    {
+      "tag": "ayuda_general",
+      "patterns": ["ayudame con esto", "necesito ayuda", "por favor ayudame", "me puedes ayudar", "no entiendo esto", "no se por donde empezar", "no se que hacer", "ayuda con un ejercicio", "dame ayuda", "estan equivocado"],
+      "responses": ["Claro, dime qué parte necesitas que te explique y lo resolvemos juntos.", "Estoy aquí para ayudarte. ¿Qué duda tienes en matemáticas, ciencias, historia u otra materia?", "Dime el problema y te apoyo paso a paso para resolverlo."]
+    },
+    {
+      "tag": "no_entiendo",
+      "patterns": ["no entiendo", "no comprendo", "puedes explicarlo de otra forma", "estoy confundido", "explicalo mas facil", "no me quedo claro", "no lo entiendo", "me confundi", "puedes repetirlo", "explicamelo sencillo"],
+      "responses": ["Sin problema, dime específicamente qué parte no te quedó clara e intento explicarlo de otra manera.", "Vamos paso a paso, ¿cuál es el punto exacto que no entiendes?"]
+    }
+  ]
+}

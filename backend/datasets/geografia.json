@@ -1,0 +1,213 @@
+{
+  "intents": [
+    {
+      "tag": "geo_continentes",
+      "patterns": [
+        "cuantos continentes hay",
+        "cuales son los continentes",
+        "que continente es mas grande",
+        "cual es el continente mas poblado",
+        "que continentes existen",
+        "cuales son los 7 continentes",
+        "cual es el continente mas pequeno",
+        "cual es el continente mas pequeño",
+        "cual continente tiene mas países",
+        "cuales son los continentes de la tierra",
+        "cuantos continentes tiene la tierra",
+        "cuales son los continentes del mundo",
+        "cual es el continente mas grande del mundo",
+        "cual es el continente más poblado del mundo",
+        "que continente es más pequeño",
+        "dime los nombres de los continentes",
+        "en cuántos continentes se divide el mundo",
+        "por favor, enumera los continentes",
+        "necesito saber cuáles son los continentes"
+      ],
+      "responses": [
+        "Existen 6 continentes según la geografía más aceptada: África, América, Asia, Europa, Oceanía y Antártida. Cada uno tiene características climáticas, culturales y geológicas propias que los distinguen entre sí.",
+        "El continente más grande es Asia, con una superficie de aproximadamente 44.5 millones de km². También es el más poblado, albergando a más de 4.6 mil millones de personas, lo que representa más de la mitad de la población mundial.",
+        "El continente más pequeño es Oceanía, con unos 8.5 millones de km². La Antártida, aunque es más grande que Oceanía (unos 14 millones de km²), no tiene población permanente y está cubierta de hielo.",
+        "Los continentes son grandes extensiones de tierra separadas por océanos. La lista tradicional incluye: África, América, Asia, Europa, Oceanía y Antártida."
+      ]
+    },
+    {
+      "tag": "geo_capitales",
+      "patterns": [
+        "cual es la capital de ecuador",
+        "cual es la capital de peru",
+        "cual es la capital de colombia",
+        "capitales de sudamerica cuales son",
+        "cual es la capital de chile",
+        "cual es la capital de argentina",
+        "cual es la capital de mexico",
+        "capital de brasil",
+        "capital de venezuela",
+        "cual es la capital de bolivia",
+        "cual es la capital de uruguay",
+        "cual es la capital de paraguay",
+        "cual es la capital de costa rica",
+        "cual es la capital de españa",
+        "cual es la capital de francia",
+        "cual es la capital de italia",
+        "capital de china",
+        "capital de japón",
+        "dime la capital de Colombia",
+        "cuál es la ciudad capital de Argentina",
+        "¿en qué ciudad está la capital de Brasil?",
+        "necesito saber la capital de Perú",
+        "¿Qué ciudad es la capital de Ecuador?",
+        "capitales de América del Sur",
+        "lista de capitales sudamericanas"
+      ],
+      "responses": [
+        "La capital de Ecuador es Quito, ubicada en la región Sierra, a más de 2800 metros sobre el nivel del mar, siendo una de las capitales más altas del mundo. Su centro histórico es Patrimonio de la Humanidad.",
+        "Las capitales de Sudamérica son: Argentina (Buenos Aires), Bolivia (Sucre es la capital constitucional, pero La Paz es la sede del gobierno), Brasil (Brasilia), Chile (Santiago), Colombia (Bogotá), Ecuador (Quito), Paraguay (Asunción), Perú (Lima), Uruguay (Montevideo) y Venezuela (Caracas).",
+        "La capital de Colombia es Bogotá, una ciudad ubicada en el altiplano andino. Es el centro cultural, económico y político del país.",
+        "La capital de Brasil es Brasilia, una ciudad planificada y construida en 1960 para ser el nuevo centro de gobierno del país.",
+        "La capital de Perú es Lima, una ciudad costera que alberga cerca de un tercio de la población total del país."
+      ]
+    },
+    {
+      "tag": "geo_clima",
+      "patterns": [
+        "que es el clima",
+        "tipos de clima cuales son",
+        "diferencia entre clima y tiempo",
+        "que factores afectan el clima",
+        "que es el tiempo atmosferico",
+        "como se clasifican los climas",
+        "clima tropical que es",
+        "clima frio que es",
+        "por que hay estaciones del año",
+        "que es un clima templado",
+        "que es un clima árido",
+        "como se llama el clima de la selva",
+        "cual es el clima de ecuador",
+        "¿por qué hace calor en la costa y frío en la sierra?",
+        "¿cómo influye la altitud en el clima?",
+        "definición de clima",
+        "diferencia entre tiempo meteorológico y clima"
+      ],
+      "responses": [
+        "El clima es el conjunto de condiciones atmosféricas (temperatura, humedad, precipitaciones, viento) que predominan en una región durante largos periodos de tiempo, generalmente medidos en décadas. Se diferencia del tiempo atmosférico en que el clima es un patrón a largo plazo, mientras que el tiempo es la condición puntual de un día o momento específico.",
+        "Los principales factores que afectan el clima son: la latitud (distancia al ecuador), la altitud (elevación sobre el nivel del mar), la cercanía al mar o a grandes masas de agua, las corrientes marinas y el relieve (montañas, llanuras). Por ejemplo, en Ecuador, aunque está en la línea ecuatorial, la altitud de zonas como Quito (2,800 m) hace que su clima sea templado y no tan caluroso como se esperaría.",
+        "Los principales tipos de clima según la clasificación de Köppen son: tropical, seco (árido y semiárido), templado, continental, polar y de alta montaña. El clima tropical es cálido y húmedo, con lluvias abundantes, típico de la selva amazónica.",
+        "En Ecuador, el clima varía notablemente por región: la Costa es cálida y húmeda, la Sierra es templada y fría (según la altitud), la Amazonía es tropical húmeda y las Islas Galápagos tienen un clima subtropical seco."
+      ]
+    },
+    {
+      "tag": "geo_relieve",
+      "patterns": [
+        "que es el relieve",
+        "tipos de relieve cuales son",
+        "que es una cordillera",
+        "que es una llanura",
+        "definición de relieve terrestre",
+        "qué son las montañas",
+        "qué es una meseta",
+        "qué es una depresión geográfica",
+        "formas del relieve",
+        "¿cómo se forman las montañas?"
+      ],
+      "responses": [
+        "El relieve es el conjunto de formas que presenta la superficie terrestre, como montañas, llanuras, valles, mesetas y depresiones, formadas por procesos geológicos internos (como el movimiento de placas tectónicas y el vulcanismo) y externos (como la erosión causada por el viento, el agua y el hielo).",
+        "Una cordillera es una cadena de montañas conectadas entre sí, como la Cordillera de los Andes, que atraviesa varios países sudamericanos, incluyendo Ecuador. Esta cordillera es clave para la geografía del país, dividiéndolo en las regiones Costa, Sierra y Amazonía.",
+        "Una llanura es una extensa área de terreno plano o con ligeras ondulaciones, sin grandes elevaciones. Son comunes en regiones costeras y valles fluviales. En Ecuador, la llanura costera es parte de esta región.",
+        "Una meseta es una elevación de terreno con la cima plana. En la Sierra ecuatoriana existen varias mesetas donde se asientan ciudades como Quito y Cuenca."
+      ]
+    },
+    {
+      "tag": "geo_ecuador_provincias",
+      "patterns": [
+        "cuantas provincias tiene ecuador",
+        "regiones naturales de ecuador cuales son",
+        "que provincias estan en la sierra de ecuador",
+        "provincias de la costa ecuatoriana",
+        "provincias de la amazonía de Ecuador",
+        "nombra las 24 provincias de Ecuador",
+        "¿cuántas provincias tiene el Ecuador?",
+        "lista de provincias de Ecuador",
+        "regiones del Ecuador",
+        "provincias de la sierra ecuatoriana"
+      ],
+      "responses": [
+        "Ecuador tiene 24 provincias, distribuidas en 4 regiones naturales: Costa, Sierra, Amazonía (también llamada Oriente) e Insular, esta última correspondiente a las Islas Galápagos.",
+        "Las provincias de la Sierra ecuatoriana son: Pichincha (capital Quito), Azuay (capital Cuenca), Imbabura (capital Ibarra), Chimborazo (capital Riobamba), Tungurahua (capital Ambato), Cotopaxi (capital Latacunga), Cañar (capital Azogues), Bolívar (capital Guaranda), Loja (capital Loja), Carchi (capital Tulcán) y Pastaza (aunque esta se considera parte de la Amazonía).",
+        "Las provincias de la Costa son: Guayas (capital Guayaquil), Manabí (capital Portoviejo), Esmeraldas (capital Esmeraldas), El Oro (capital Machala), Los Ríos (capital Babahoyo), Santa Elena (capital Santa Elena) y Santo Domingo de los Tsáchilas (capital Santo Domingo).",
+        "Las provincias de la Amazonía son: Napo, Pastaza, Morona Santiago, Sucumbíos, Orellana y Zamora Chinchipe."
+      ]
+    },
+    {
+      "tag": "geo_guerra_ecuador_peru",
+      "patterns": [
+        "que fue la guerra entre ecuador y peru",
+        "que fue el conflicto del cenepa",
+        "guerra de 1941 entre ecuador y peru que paso",
+        "que fue el protocolo de rio de janeiro",
+        "por que ecuador y peru tuvieron guerras",
+        "conflicto territorial Ecuador-Perú",
+        "paz entre Ecuador y Perú",
+        "Acta de Brasilia 1998",
+        "Cordillera del Cóndor",
+        "¿por qué pelearon Ecuador y Perú?"
+      ],
+      "responses": [
+        "Ecuador y Perú tuvieron un largo conflicto territorial por su frontera amazónica, que se remonta a la época de la independencia. El enfrentamiento más importante fue la guerra de 1941, que terminó con la firma del Protocolo de Río de Janeiro en 1942, un acuerdo que Ecuador impugnó décadas después.",
+        "El último conflicto armado fue la Guerra del Cenepa en 1995, un enfrentamiento bélico en la Cordillera del Cóndor. La paz definitiva se firmó con el Acta de Brasilia el 26 de octubre de 1998, que fijó la frontera definitiva y selló la paz entre ambas naciones, promoviendo la cooperación binacional.",
+        "El Protocolo de Río de Janeiro fue un tratado firmado en 1942 tras la guerra de 1941, en el que Ecuador cedió gran parte de su territorio amazónico a Perú. Ecuador declaró este protocolo nulo en 1960, lo que llevó a nuevas tensiones.",
+        "El Acta de Brasilia de 1998 fue el acuerdo de paz definitivo que puso fin al conflicto territorial. En ella, Ecuador y Perú, con la garantía de países amigos (Argentina, Brasil, Chile y EE.UU.), demarcaron su frontera y establecieron mecanismos de integración y desarrollo."
+      ]
+    },
+    {
+      "tag": "geo_fundacion_quito",
+      "patterns": [
+        "cuando se fundo quito",
+        "quien fundo quito",
+        "fundacion espanola de quito como fue",
+        "que fecha se fundo quito",
+        "fecha de fundación de Quito",
+        "¿quién fundó la ciudad de Quito?",
+        "historia de la fundación de Quito",
+        "6 de diciembre de 1534 Quito"
+      ],
+      "responses": [
+        "La fundación española de Quito fue el 6 de diciembre de 1534, realizada por el conquistador Sebastián de Belalcázar sobre un antiguo asentamiento inca (que a su vez había sido poblado por los Quitus). Es una de las primeras ciudades declaradas Patrimonio Cultural de la Humanidad por la UNESCO en 1978.",
+        "Quito fue fundada por Sebastián de Belalcázar, un conquistador español que también fundó otras ciudades como Popayán en Colombia. La ciudad se estableció sobre las ruinas de la ciudad inca de Quito, que había sido arrasada por los conflictos entre los incas.",
+        "La fundación de Quito ocurrió el 6 de diciembre de 1534. Sin embargo, la ciudad ya existía como asentamiento prehispánico. Fue la primera ciudad de Sudamérica en ser declarada Patrimonio de la Humanidad."
+      ]
+    },
+    {
+      "tag": "geo_fundacion_guayaquil",
+      "patterns": [
+        "cuando se fundo guayaquil",
+        "quien fundo guayaquil",
+        "fundacion de guayaquil como fue",
+        "que fecha se fundo guayaquil",
+        "fecha de fundación de Guayaquil",
+        "¿quién fundó Guayaquil?",
+        "historia de Guayaquil"
+      ],
+      "responses": [
+        "La fundación definitiva de Guayaquil fue el 25 de julio de 1547, bajo el nombre de 'Santiago de Guayaquil'. Sin embargo, tuvo varios intentos previos (como en 1534 y 1535) debido a ataques de piratas y a su traslado de ubicación. Se atribuye al capitán español Francisco de Orellana o a Diego de Almagro, según diferentes versiones históricas.",
+        "Guayaquil fue fundada oficialmente en 1547, aunque el proceso de fundación fue complejo. Hoy es el principal puerto y la ciudad más poblada de Ecuador, con una gran importancia económica y comercial.",
+        "La fundación de Guayaquil se conmemora el 25 de julio. La ciudad, por su ubicación estratégica a orillas del río Guayas, fue un punto clave para el comercio colonial y la independencia de Ecuador."
+      ]
+    },
+    {
+      "tag": "geo_fundacion_cuenca",
+      "patterns": [
+        "cuando se fundo cuenca",
+        "quien fundo cuenca ecuador",
+        "fundacion de cuenca como fue",
+        "fecha de fundación de Cuenca",
+        "¿quién fundó Cuenca?",
+        "historia de Cuenca Ecuador"
+      ],
+      "responses": [
+        "La ciudad de Cuenca fue fundada por el español Gil Ramírez Dávalos el 12 de abril de 1557, sobre la antigua ciudad inca de Tomebamba. Su centro histórico es Patrimonio Cultural de la Humanidad por la UNESCO desde 1999.",
+        "Cuenca fue fundada en 1557 por Gil Ramírez Dávalos, bajo las órdenes del virrey del Perú, Andrés Hurtado de Mendoza. La ciudad se erigió en un valle andino y se convirtió en un importante centro cultural, religioso y artesanal.",
+        "La fundación de Cuenca se dio el 12 de abril de 1557. La ciudad es conocida por su arquitectura colonial, sus artesanías de paja toquilla y su rica vida cultural. Es la tercera ciudad más importante de Ecuador."
+      ]
+    }
+  ]
+}

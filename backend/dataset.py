@@ -1,58 +1,86 @@
+import json
+import re
+import unicodedata
+from pathlib import Path
+
+DATASETS_DIR = Path(__file__).parent / "datasets"
+BASE_DIR = Path(__file__).parent
 
 
-dataset = [
-    {"pregunta": "hola", "respuesta": "Hola. Soy tu chatbot educativo de Python. Puedo ayudarte con if, else, for, funciones, listas y variables."},
-    {"pregunta": "buenas", "respuesta": "Hola. Soy tu chatbot educativo de Python. ¿Qué tema quieres repasar hoy?"},
-    {"pregunta": "buenos dias", "respuesta": "Buenos días. ¿Quieres aprender algo de Python?"},
-    {"pregunta": "buenas tardes", "respuesta": "Buenas tardes. ¿En qué tema de Python te ayudo?"},
-    {"pregunta": "buenas noches", "respuesta": "Buenas noches. ¿Quieres practicar un concepto de Python?"},
-    {"pregunta": "gracias", "respuesta": "De nada. Estoy aquí para ayudarte."},
-    {"pregunta": "adios", "respuesta": "Hasta luego. Sigue practicando Python."},
-    {"pregunta": "quien eres", "respuesta": "Soy un chatbot educativo de Python."},
-    {"pregunta": "como te llamas", "respuesta": "Soy tu chatbot educativo de Python."},
-    {"pregunta": "que puedes hacer", "respuesta": "Puedo explicarte variables, condicionales, bucles, funciones, listas y diccionarios."},
-
-    {"pregunta": "que es una variable", "respuesta": "Una variable guarda un valor. Ejemplo: edad = 20\nprint(edad)"},
-    {"pregunta": "variable", "respuesta": "Una variable guarda un valor. Ejemplo: edad = 20\nprint(edad)"},
-    {"pregunta": "como crear una variable", "respuesta": "Se crea asignando un valor. Ejemplo: nombre = 'Ana'"},
-
-    {"pregunta": "que es if", "respuesta": "if sirve para ejecutar código solo si una condición es verdadera.\nEjemplo:\nedad = 20\nif edad >= 18:\n    print('Eres mayor de edad')"},
-    {"pregunta": "if", "respuesta": "if sirve para ejecutar código solo si una condición es verdadera.\nEjemplo:\nedad = 20\nif edad >= 18:\n    print('Eres mayor de edad')"},
-    {"pregunta": "que es else", "respuesta": "else se ejecuta cuando la condición del if no se cumple.\nEjemplo:\nedad = 16\nif edad >= 18:\n    print('Mayor')\nelse:\n    print('Menor')"},
-    {"pregunta": "else", "respuesta": "else se ejecuta cuando la condición del if no se cumple.\nEjemplo:\nedad = 16\nif edad >= 18:\n    print('Mayor')\nelse:\n    print('Menor')"},
-    {"pregunta": "elif", "respuesta": "elif añade otra condición si la anterior no se cumplió.\nEjemplo:\npuntaje = 85\nif puntaje >= 90:\n    print('Excelente')\nelif puntaje >= 70:\n    print('Bueno')\nelse:\n    print('Requiere mejorar')"},
-
-    {"pregunta": "que es un for", "respuesta": "for repite instrucciones varias veces.\nEjemplo:\nfor i in range(3):\n    print(i)"},
-    {"pregunta": "for", "respuesta": "for repite instrucciones varias veces.\nEjemplo:\nfor i in range(3):\n    print(i)"},
-    {"pregunta": "bucle for", "respuesta": "Un bucle for sirve para repetir código un número conocido de veces.\nEjemplo:\nfor i in range(3):\n    print(i)"},
-    {"pregunta": "que es un while", "respuesta": "while repite mientras una condición siga siendo verdadera.\nEjemplo:\ncontador = 0\nwhile contador < 3:\n    print(contador)\n    contador += 1"},
-    {"pregunta": "while", "respuesta": "while repite mientras una condición siga siendo verdadera.\nEjemplo:\ncontador = 0\nwhile contador < 3:\n    print(contador)\n    contador += 1"},
-
-    {"pregunta": "que es una funcion", "respuesta": "Una función agrupa instrucciones para reutilizarlas.\nEjemplo:\ndef saludar():\n    print('Hola')\n\nsaludar()"},
-    {"pregunta": "funcion", "respuesta": "Una función agrupa instrucciones para reutilizarlas.\nEjemplo:\ndef saludar():\n    print('Hola')\n\nsaludar()"},
-    {"pregunta": "def", "respuesta": "def se usa para definir una función.\nEjemplo:\ndef sumar(a, b):\n    return a + b"},
-    {"pregunta": "que es return", "respuesta": "return devuelve un valor desde la función.\nEjemplo:\ndef sumar(a, b):\n    return a + b"},
-
-    {"pregunta": "que es una lista", "respuesta": "Una lista guarda varios elementos en un solo lugar.\nEjemplo:\nfrutas = ['manzana', 'pera']\nprint(frutas[0])"},
-    {"pregunta": "lista", "respuesta": "Una lista guarda varios elementos en un solo lugar.\nEjemplo:\nfrutas = ['manzana', 'pera']\nprint(frutas[0])"},
-    {"pregunta": "como agregar a una lista", "respuesta": "Se usa append().\nEjemplo:\nfrutas = ['manzana']\nfrutas.append('pera')\nprint(frutas)"},
-
-    {"pregunta": "que es un diccionario", "respuesta": "Un diccionario guarda datos en pares clave-valor.\nEjemplo:\npersona = {'nombre': 'Ana', 'edad': 20}\nprint(persona['nombre'])"},
-    {"pregunta": "diccionario", "respuesta": "Un diccionario guarda datos en pares clave-valor.\nEjemplo:\npersona = {'nombre': 'Ana', 'edad': 20}\nprint(persona['nombre'])"},
-
-    {"pregunta": "que es python", "respuesta": "Python es un lenguaje fácil de leer y muy usado en programación."},
-    {"pregunta": "como empezar en python", "respuesta": "Empieza con variables, condicionales, bucles y funciones. Te puedo explicar cada tema paso a paso."},
-    {"pregunta": "ayuda", "respuesta": "Claro. Puedes preguntarme por if, else, for, while, funciones, listas o variables."},
-]
+def normalizar_texto(texto: str) -> str:
+    texto = texto.lower().strip()
+    # Normaliza operadores matemáticos comunes para que consultas como "2+2" se entiendan mejor.
+    texto = re.sub(r'(?<=\d)\s*([+])\s*(?=\d)', ' mas ', texto)
+    texto = re.sub(r'(?<=\d)\s*([-])\s*(?=\d)', ' menos ', texto)
+    texto = re.sub(r'(?<=\d)\s*([x×*])\s*(?=\d)', ' por ', texto)
+    texto = re.sub(r'(?<=\d)\s*([/÷])\s*(?=\d)', ' dividido ', texto)
+    texto = unicodedata.normalize("NFD", texto)
+    texto = "".join(caracter for caracter in texto if unicodedata.category(caracter) != "Mn")
+    texto = re.sub(r"[^a-z0-9\s]", "", texto)
+    texto = re.sub(r"\s+", " ", texto).strip()
+    return texto
 
 
-def obtener_dataset():
-    return dataset
+def cargar_todos_los_intents(directorio: Path = DATASETS_DIR) -> list[dict]:
+    directorios = []
+    for ruta in [directorio, DATASETS_DIR, BASE_DIR]:
+        if ruta.exists():
+            directorios.append(ruta)
+
+    archivos = []
+    for ruta in directorios:
+        archivos.extend(sorted(ruta.glob("*.json")))
+
+    archivos = sorted({archivo.resolve(): archivo for archivo in archivos}.values())
+    if not archivos:
+        raise FileNotFoundError(f"No se encontraron archivos JSON de conocimiento en {BASE_DIR}")
+
+    todos_los_intents = []
+    tags_vistos = set()
+
+    for archivo in archivos:
+        try:
+            with open(archivo, "r", encoding="utf-8") as manejador:
+                datos = json.load(manejador)
+        except (json.JSONDecodeError, UnicodeDecodeError, OSError):
+            continue
+
+        if not isinstance(datos, dict) or "intents" not in datos:
+            continue
+
+        for intent in datos["intents"]:
+            tag = intent.get("tag")
+            if not tag or tag in tags_vistos:
+                continue
+            tags_vistos.add(tag)
+            todos_los_intents.append(intent)
+
+    if not todos_los_intents:
+        raise ValueError("No se encontraron intenciones válidas para entrenar.")
+
+    return todos_los_intents
 
 
-def obtener_preguntas():
-    return [item["pregunta"] for item in dataset]
+def construir_dataset(directorio: Path = DATASETS_DIR):
+    intents = cargar_todos_los_intents(directorio)
+
+    X, y = [], []
+    respuestas = {}
+
+    for intent in intents:
+        tag = intent["tag"]
+        respuestas[tag] = intent.get("responses", [])
+
+        for patron in intent.get("patterns", []):
+            texto_limpio = normalizar_texto(patron)
+            if texto_limpio:
+                X.append(texto_limpio)
+                y.append(tag)
+
+    return X, y, respuestas
 
 
-def obtener_respuestas():
-    return [item["respuesta"] for item in dataset]
+if __name__ == "__main__":
+    X, y, respuestas = construir_dataset()
+    print(f"Ejemplos cargados: {len(X)}")
+    print(f"Intenciones cargadas: {len(respuestas)}")

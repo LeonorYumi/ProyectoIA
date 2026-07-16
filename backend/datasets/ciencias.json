@@ -1,0 +1,84 @@
+{
+  "intents": [
+    {
+      "tag": "cien_fotosintesis.",
+      "patterns": ["que es la fotosintesis", "como hacen las plantas fotosintesis", "que necesita una planta para hacer fotosintesis", "que produce la fotosintesis", "explicame la fotosintesis", "para que sirve la fotosintesis", "que ocurre en la fotosintesis", "como se realiza la fotosintesis", "fotosintesis de las plantas", "cual es el proceso de la fotosintesis", "que hacen las plantas con la luz solar", "cual es la importancia de la fotosintesis", "por que las plantas necesitan sol", "cuales son los reactivos de la fotosintesis", "cuales son los productos de la fotosintesis", "donde ocurre la fotosintesis", "que papel juega la clorofila", "que es la glucosa en la fotosintesis", "que gas liberan las plantas"],
+      "responses": [
+        "La fotosíntesis es el proceso mediante el cual las plantas, algas y algunas bacterias transforman la luz solar, el agua y el dióxido de carbono en glucosa (su alimento) y oxígeno como producto secundario. Este proceso ocurre principalmente en las hojas, dentro de unos orgánulos llamados cloroplastos, gracias a un pigmento verde llamado clorofila que capta la energía de la luz.",
+        "Para realizar la fotosíntesis, una planta necesita tres elementos: luz solar (energía), agua (absorbida por las raíces) y dióxido de carbono (absorbido del aire a través de los estomas de las hojas). El resultado es glucosa, que la planta usa como energía para crecer, y oxígeno, que libera al ambiente y es esencial para la respiración de los seres vivos."
+      ]
+    },
+    {
+      "tag": "cien_atomo",
+      "patterns": ["que es un atomo", "de que esta hecho un atomo", "que es un proton", "que es un electron", "que es un neutron", "estructura del atomo cual es", "partes del atomo", "que es el nucleo del atomo", "como esta formado un atomo", "que es la carga de un proton", "que es la carga de un electron", "como se llama el centro del atomo", "que es un elemento quimico y como se relaciona con el atomo", "que partícula tiene carga positiva", "que particula tiene carga negativa", "que es el numero atomico", "que es el numero masico", "que diferencia hay entre proton y neutron"],
+      "responses": [
+        "Un átomo es la unidad más pequeña de un elemento químico que conserva sus propiedades, formado por un núcleo central que contiene protones (carga positiva) y neutrones (sin carga), rodeado por electrones (carga negativa) que giran a su alrededor en distintas capas o niveles de energía.",
+        "El número de protones en el núcleo determina de qué elemento químico se trata (por ejemplo, el hidrógeno tiene 1 protón, el carbono tiene 6). En un átomo neutro, la cantidad de electrones es igual a la de protones, lo que equilibra las cargas eléctricas."
+      ]
+    },
+    {
+      "tag": "cien_celula",
+      "patterns": ["que es una celula", "tipos de celulas cuales son", "diferencia entre celula animal y vegetal", "que es el nucleo celular", "que es la membrana celular", "partes de la celula", "que hace la celula", "como se llama la unidad basica de los seres vivos", "cual es la funcion del nucleo", "que es el citoplasma", "que es el adn", "que diferencia hay entre una celula vegetal y una animal", "que es la membrana plasmática", "cual es la función de la mitocondria", "que es el ribosoma", "que es el material genético de la célula"],
+      "responses": [
+        "La célula es la unidad básica estructural y funcional de todos los seres vivos; puede ser procariota (sin núcleo definido, como las bacterias) o eucariota (con núcleo definido, como las células animales y vegetales). Todas las células están rodeadas por una membrana celular que controla qué sustancias entran y salen.",
+        "La diferencia principal entre una célula animal y una vegetal es que la vegetal tiene pared celular (una capa rígida extra que le da soporte), cloroplastos (para hacer fotosíntesis) y una vacuola central grande (para almacenar agua y nutrientes), estructuras que la célula animal no posee."
+      ]
+    },
+    {
+      "tag": "cien_gravedad",
+      "patterns": ["que es la gravedad", "quien descubrio la gravedad", "como funciona la gravedad", "por que los objetos caen al suelo", "por que la luna no se cae", "por que los planetas orbitan", "que es la fuerza de gravedad", "como afecta la gravedad a los cuerpos", "que pasaria sin gravedad", "como se mide la gravedad", "que es el peso", "que relación hay entre masa y peso"],
+      "responses": [
+        "La gravedad es la fuerza de atracción que ejercen entre sí todos los cuerpos que tienen masa; cuanto mayor sea la masa de un objeto, mayor será su fuerza de atracción gravitacional. En la Tierra, la gravedad es lo que hace que los objetos caigan hacia el centro del planeta y que tengamos peso.",
+        "Isaac Newton formuló la ley de gravitación universal en el siglo XVII, que describe cómo dos cuerpos se atraen en proporción directa a sus masas y en proporción inversa al cuadrado de la distancia que los separa. Más tarde, Albert Einstein amplió esta idea con la teoría de la relatividad general, describiendo la gravedad como una curvatura del espacio-tiempo."
+      ]
+    },
+    {
+      "tag": "cien_ciclo_agua",
+      "patterns": ["que es el ciclo del agua", "explicame el ciclo del agua", "etapas del ciclo del agua cuales son", "que es la evaporacion", "como se llama el proceso por el cual el agua sube al cielo", "como se forman las nubes", "que es la condensacion", "que es la precipitación", "por que llueve", "que es la infiltración", "que es la escorrentía", "como se recarga el agua subterránea"],
+      "responses": [
+        "El ciclo del agua describe el movimiento continuo del agua en la Tierra a través de distintos procesos: evaporación, condensación, precipitación e infiltración, en un circuito que se repite constantemente entre la superficie terrestre, los océanos y la atmósfera.",
+        "Las etapas principales son: evaporación (el calor del sol convierte el agua de océanos y ríos en vapor), condensación (el vapor se enfría en la atmósfera y forma nubes), precipitación (el agua cae como lluvia, nieve o granizo) e infiltración/escorrentía (el agua se filtra en el suelo o corre hacia ríos y mares, reiniciando el ciclo)."
+      ]
+    },
+    {
+      "tag": "cien_sistema_solar",
+      "patterns": ["cuantos planetas tiene el sistema solar", "que es el sistema solar", "cual es el planeta mas grande", "que es una estrella", "orden de los planetas cual es"],
+      "responses": [
+        "El sistema solar está formado por el Sol (una estrella) y todos los cuerpos celestes que orbitan a su alrededor: ocho planetas, sus lunas, asteroides, cometas y planetas enanos. En orden desde el Sol, los planetas son: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.",
+        "Júpiter es el planeta más grande del sistema solar, tan grande que podrían caber más de mil planetas como la Tierra dentro de él. El Sol es una estrella, es decir, una esfera de gas incandescente que genera su propia luz y energía mediante reacciones de fusión nuclear en su núcleo."
+      ]
+    },
+    {
+      "tag": "cien_leyes_newton",
+      "patterns": ["cuales son las leyes de newton", "que dice la primera ley de newton", "que es la inercia", "que dice la segunda ley de newton", "que es accion y reaccion"],
+      "responses": [
+        "Las tres leyes de Newton describen el movimiento de los cuerpos: la primera (ley de inercia) dice que un cuerpo en reposo o en movimiento uniforme seguirá así a menos que una fuerza externa actúe sobre él. La segunda ley establece que la fuerza aplicada a un objeto es igual a su masa multiplicada por la aceleración que produce (F=m·a).",
+        "La tercera ley de Newton, conocida como ley de acción y reacción, dice que a toda fuerza que un cuerpo ejerce sobre otro, le corresponde una fuerza de igual magnitud pero de sentido contrario que el segundo cuerpo ejerce sobre el primero. La inercia es la tendencia natural de un cuerpo a resistirse a cambiar su estado de movimiento o reposo."
+      ]
+    },
+    {
+      "tag": "cien_tabla_periodica",
+      "patterns": ["que es la tabla periodica", "como esta organizada la tabla periodica", "que es un elemento quimico", "que es un grupo y un periodo en la tabla periodica"],
+      "responses": [
+        "La tabla periódica organiza todos los elementos químicos conocidos según su número atómico (la cantidad de protones en su núcleo), sus propiedades químicas y su configuración electrónica. Fue propuesta originalmente por Dmitri Mendeléyev en 1869.",
+        "En la tabla periódica, los elementos se organizan en filas horizontales llamadas periodos y columnas verticales llamadas grupos o familias. Los elementos de un mismo grupo comparten propiedades químicas similares porque tienen la misma cantidad de electrones en su última capa (electrones de valencia)."
+      ]
+    },
+    {
+      "tag": "cien_estados_materia",
+      "patterns": ["cuales son los estados de la materia", "que es un cambio de estado", "diferencia entre solido liquido y gaseoso", "que es la evaporacion y la condensacion", "como cambia el agua de solido a liquido", "que pasa cuando un gas se enfria", "que es la fusión", "que es la solidificacion", "como se llama cuando el vapor se vuelve liquido"],
+      "responses": [
+        "Los estados de la materia más comunes son: sólido (forma y volumen definidos, partículas muy juntas), líquido (volumen definido pero forma variable, partículas más separadas) y gaseoso (sin forma ni volumen definido, partículas muy separadas y en movimiento libre). También existe el plasma, un cuarto estado presente por ejemplo en el Sol.",
+        "Un cambio de estado ocurre cuando la materia pasa de un estado a otro por variaciones de temperatura o presión: fusión (sólido a líquido), evaporación (líquido a gas), condensación (gas a líquido), solidificación (líquido a sólido), sublimación (sólido a gas directamente) y sublimación inversa (gas a sólido directamente)."
+      ]
+    },
+    {
+      "tag": "cien_ecosistema",
+      "patterns": ["que es un ecosistema", "que es una cadena alimenticia", "que es un productor y un consumidor", "diferencia entre bioma y ecosistema"],
+      "responses": [
+        "Un ecosistema es el conjunto formado por los seres vivos (plantas, animales, microorganismos) de una zona y el ambiente físico en el que viven (agua, suelo, clima), interactuando entre sí de forma equilibrada.",
+        "Una cadena alimenticia muestra cómo fluye la energía entre los seres vivos: los productores (plantas, que hacen fotosíntesis) son consumidos por herbívoros (consumidores primarios), que a su vez son consumidos por carnívoros (consumidores secundarios), y los descomponedores reciclan la materia orgánica al final del ciclo."
+      ]
+    }
+  ]
+}

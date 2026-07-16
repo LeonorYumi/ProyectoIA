@@ -1,0 +1,234 @@
+{
+  "intents": [
+    {
+      "tag": "hist_independencia_ecuador",
+      "patterns": [
+        "cuando fue la independencia de ecuador",
+        "cuando se independizo ecuador",
+        "como se independizo ecuador",
+        "que paso el 10 de agosto de 1809",
+        "que se celebra el 10 de agosto",
+        "que fue el primer grito de independencia",
+        "historia de la independencia del ecuador",
+        "porque ecuador se independizo",
+        "quienes participaron en la independencia del ecuador",
+        "cual fue el año de la independencia de ecuador",
+        "quien fue el libertador de ecuador",
+        "explicame la independencia de ecuador",
+        "resumen de la independencia de ecuador",
+        "que significa la independencia",
+        "como era ecuador antes de independizarse"
+      ],
+      "responses": [
+        "La independencia de Ecuador fue un proceso histórico que comenzó con el Primer Grito de Independencia el 10 de agosto de 1809 en Quito y culminó con la Batalla de Pichincha el 24 de mayo de 1822.",
+        "El proceso independentista ecuatoriano buscó poner fin al dominio español. Entre sus figuras más importantes estuvieron Antonio José de Sucre, Simón Bolívar y varios patriotas quiteños.",
+        "La independencia de Ecuador se consolidó en 1822 tras la victoria patriota en la Batalla de Pichincha, un acontecimiento fundamental para la liberación del territorio."
+      ]
+    },
+
+    {
+      "tag": "hist_batalla_pichincha",
+      "patterns": [
+        "que fue la batalla de pichincha",
+        "cuando fue la batalla de pichincha",
+        "donde fue la batalla de pichincha",
+        "quien gano la batalla de pichincha",
+        "quien dirigio la batalla de pichincha",
+        "que ocurrio el 24 de mayo de 1822",
+        "resultado de la batalla de pichincha",
+        "explicame la batalla de pichincha"
+      ],
+      "responses": [
+        "La Batalla de Pichincha ocurrió el 24 de mayo de 1822 en las laderas del volcán Pichincha, cerca de Quito.",
+        "La victoria patriota en la Batalla de Pichincha, liderada por Antonio José de Sucre, permitió la independencia de Quito del dominio español.",
+        "La Batalla de Pichincha es uno de los acontecimientos más importantes de la historia ecuatoriana porque consolidó el proceso independentista."
+      ]
+    },
+
+    {
+      "tag": "hist_guerra_cenepa",
+      "patterns": [
+        "que fue la guerra del cenepa",
+        "guerra del cenepa",
+        "cuando fue la guerra del cenepa",
+        "conflicto del cenepa",
+        "ecuador y peru conflicto",
+        "guerra entre ecuador y peru",
+        "que paso en 1995 entre ecuador y peru",
+        "causas de la guerra del cenepa",
+        "resultado de la guerra del cenepa",
+        "conflicto ecuador peru 1995"
+      ],
+      "responses": [
+        "La Guerra del Cenepa fue un conflicto armado entre Ecuador y Perú ocurrido en 1995 debido a disputas territoriales en la Cordillera del Cóndor.",
+        "El conflicto del Cenepa se desarrolló principalmente entre enero y febrero de 1995. Posteriormente se alcanzaron acuerdos que ayudaron a resolver las diferencias fronterizas.",
+        "La Guerra del Cenepa es considerada uno de los acontecimientos militares más importantes de la historia contemporánea del Ecuador."
+      ]
+    },
+
+    {
+      "tag": "historia_ecuador_general",
+      "patterns": [
+        "historia del ecuador",
+        "historia ecuatoriana",
+        "cuentame la historia del ecuador",
+        "resumen de la historia del ecuador",
+        "origen del ecuador",
+        "como se formo ecuador",
+        "cuando se fundo el ecuador",
+        "etapas de la historia ecuatoriana",
+        "acontecimientos importantes de ecuador",
+        "datos historicos de ecuador"
+      ],
+      "responses": [
+        "La historia del Ecuador abarca desde las culturas prehispánicas, pasando por la conquista española y la independencia, hasta la formación de la República en 1830.",
+        "Entre los acontecimientos más importantes de Ecuador destacan el Primer Grito de Independencia de 1809, la Batalla de Pichincha de 1822 y la creación de la República del Ecuador en 1830.",
+        "Ecuador posee una rica herencia cultural e histórica que incluye civilizaciones indígenas, la época colonial y el desarrollo del Estado moderno."
+      ]
+    },
+
+    {
+      "tag": "hist_primera_guerra_mundial",
+      "patterns": [
+        "primera guerra mundial",
+        "1 guerra mundial",
+        "1ra guerra mundial",
+        "guerra mundial 1",
+        "ww1",
+        "que fue la primera guerra mundial",
+        "cuando fue la primera guerra mundial",
+        "cuando empezo la primera guerra mundial",
+        "cuando termino la primera guerra mundial",
+        "causas de la primera guerra mundial",
+        "porque inicio la primera guerra mundial",
+        "quienes participaron en la primera guerra mundial",
+        "que paises participaron en la primera guerra mundial",
+        "quien gano la primera guerra mundial",
+        "tratado de versalles",
+        "asesinato de francisco fernando",
+        "explicame la primera guerra mundial",
+        "resumen de la primera guerra mundial",
+        "hablame de la primera guerra mundial",
+        "primera gerra mundial",
+        "primera gerra mudial"
+      ],
+      "responses": [
+        "La Primera Guerra Mundial fue un conflicto internacional que ocurrió entre 1914 y 1918 y enfrentó a los Aliados contra las Potencias Centrales.",
+        "La guerra comenzó tras el asesinato del archiduque Francisco Fernando de Austria en 1914, aunque también influyeron rivalidades políticas y militares entre las potencias europeas.",
+        "La Primera Guerra Mundial terminó en 1918 con la victoria de los Aliados y provocó importantes cambios políticos, económicos y territoriales."
+      ]
+    },
+
+    {
+      "tag": "hist_segunda_guerra_mundial",
+      "patterns": [
+        "segunda guerra mundial",
+        "2 guerra mundial",
+        "2da guerra mundial",
+        "guerra mundial 2",
+        "ww2",
+        "que fue la segunda guerra mundial",
+        "cuando fue la segunda guerra mundial",
+        "cuando empezo la segunda guerra mundial",
+        "cuando termino la segunda guerra mundial",
+        "que paises participaron en la segunda guerra mundial",
+        "causas de la segunda guerra mundial",
+        "quien gano la segunda guerra mundial",
+        "que fue el holocausto",
+        "explicame la segunda guerra mundial",
+        "resumen de la segunda guerra mundial"
+      ],
+      "responses": [
+        "La Segunda Guerra Mundial fue un conflicto global desarrollado entre 1939 y 1945 que involucró a gran parte de las naciones del mundo.",
+        "La guerra enfrentó a los Aliados, liderados por Estados Unidos, Reino Unido y la Unión Soviética, contra las Potencias del Eje encabezadas por Alemania, Italia y Japón.",
+        "La Segunda Guerra Mundial terminó en 1945 con la derrota de Alemania y Japón y dejó profundas consecuencias políticas, económicas y sociales."
+      ]
+    },
+
+    {
+      "tag": "hist_revolucion_francesa",
+      "patterns": [
+        "que fue la revolucion francesa",
+        "revolucion francesa",
+        "cuando fue la revolucion francesa",
+        "que paso en 1789",
+        "toma de la bastilla",
+        "que fue la bastilla",
+        "por que se hizo la revolucion francesa",
+        "causas de la revolucion francesa",
+        "quien fue napoleon bonaparte",
+        "explicame la revolucion francesa"
+      ],
+      "responses": [
+        "La Revolución Francesa fue un proceso político y social ocurrido entre 1789 y 1799 que puso fin a la monarquía absoluta en Francia.",
+        "La Toma de la Bastilla el 14 de julio de 1789 simboliza el inicio de la Revolución Francesa.",
+        "La Revolución Francesa promovió ideales como la libertad, la igualdad y la fraternidad, influyendo en numerosos movimientos políticos posteriores."
+      ]
+    },
+
+    {
+      "tag": "hist_guerra_fria",
+      "patterns": [
+        "que fue la guerra fria",
+        "guerra fria",
+        "quienes participaron en la guerra fria",
+        "porque se llama guerra fria",
+        "que fue el muro de berlin",
+        "causas de la guerra fria",
+        "cuando empezo la guerra fria",
+        "cuando termino la guerra fria",
+        "explicame la guerra fria"
+      ],
+      "responses": [
+        "La Guerra Fría fue un periodo de tensión política e ideológica entre Estados Unidos y la Unión Soviética que se extendió aproximadamente desde 1947 hasta 1991.",
+        "Durante la Guerra Fría no hubo un enfrentamiento militar directo entre las dos superpotencias, pero sí conflictos indirectos y una intensa competencia tecnológica y militar.",
+        "El Muro de Berlín fue uno de los símbolos más importantes de la Guerra Fría y representó la división entre el bloque occidental y el bloque comunista."
+      ]
+    },
+
+    {
+      "tag": "hist_civilizaciones_antiguas",
+      "patterns": [
+        "que civilizaciones antiguas existieron",
+        "quienes fueron los egipcios",
+        "que es la civilizacion griega",
+        "quienes fueron los romanos",
+        "que aporto la civilizacion mesopotamica",
+        "que fueron los incas",
+        "quienes fueron los mayas",
+        "quienes fueron los aztecas",
+        "cuales fueron las civilizaciones precolombinas",
+        "que hicieron los mayas",
+        "que aportaron los aztecas",
+        "que construyeron los romanos",
+        "que inventaron los fenicios",
+        "que era la polis griega",
+        "explicame las civilizaciones antiguas"
+      ],
+      "responses": [
+        "Las civilizaciones antiguas como Egipto, Mesopotamia, Grecia y Roma realizaron importantes aportes en escritura, arquitectura, leyes, matemáticas y organización política.",
+        "Los egipcios destacaron por sus pirámides, la escritura jeroglífica y sus conocimientos en astronomía y medicina.",
+        "Los Incas, Mayas y Aztecas fueron algunas de las civilizaciones más importantes de América antes de la llegada de los europeos."
+      ]
+    },
+
+    {
+      "tag": "hist_america_latina",
+      "patterns": [
+        "independencia de america latina",
+        "como fue la independencia de america latina",
+        "quien fue simon bolivar",
+        "que fue la gran colombia",
+        "quien fue jose de san martin",
+        "quien fue antonio jose de sucre",
+        "libertadores de america",
+        "historia de america latina"
+      ],
+      "responses": [
+        "La independencia de América Latina se desarrolló principalmente entre 1810 y 1825 y permitió la formación de numerosos estados independientes.",
+        "Simón Bolívar fue uno de los líderes más importantes de la independencia sudamericana y promovió la creación de la Gran Colombia.",
+        "José de San Martín y Antonio José de Sucre también desempeñaron papeles fundamentales en los procesos de independencia latinoamericanos."
+      ]
+    }
+  ]
+}
