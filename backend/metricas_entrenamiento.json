@@ -5,86 +5,104 @@
     "test_size": 0.2,
     "umbral": 0.12
   },
-  "n_ejemplos": 761,
-  "n_intenciones": 68,
-  "accuracy": 0.7320261437908496,
+  "n_ejemplos": 1136,
+  "n_intenciones": 78,
+  "accuracy": 0.6885964912280702,
   "reporte": {
     "agradecimiento": {
       "precision": 1.0,
-      "recall": 0.5,
-      "f1-score": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 2.0
     },
     "ayuda_general": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 2.0
     },
     "cien_atomo": {
-      "precision": 0.6666666666666666,
-      "recall": 1.0,
-      "f1-score": 0.8,
-      "support": 4.0
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1-score": 0.6153846153846154,
+      "support": 5.0
     },
     "cien_celula": {
-      "precision": 0.6,
-      "recall": 1.0,
-      "f1-score": 0.75,
-      "support": 3.0
+      "precision": 0.15384615384615385,
+      "recall": 0.4,
+      "f1-score": 0.2222222222222222,
+      "support": 5.0
     },
     "cien_ciclo_agua": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "cien_ecosistema": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "cien_estados_materia": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "cien_evolucion": {
       "precision": 0.5,
       "recall": 0.5,
       "f1-score": 0.5,
       "support": 2.0
     },
-    "cien_ecosistema": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
-    },
-    "cien_estados_materia": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 2.0
-    },
     "cien_fotosintesis": {
       "precision": 1.0,
-      "recall": 0.75,
-      "f1-score": 0.8571428571428571,
-      "support": 4.0
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 6.0
+    },
+    "cien_genetica": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
     },
     "cien_gravedad": {
-      "precision": 1.0,
-      "recall": 0.5,
-      "f1-score": 0.6666666666666666,
-      "support": 2.0
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 4.0
     },
     "cien_leyes_newton": {
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
+      "support": 3.0
+    },
+    "cien_quimica_basica": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
-      "support": 1.0
+      "support": 3.0
     },
     "cien_sistema_solar": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 1.0
+      "precision": 0.3333333333333333,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.4444444444444444,
+      "support": 3.0
     },
     "cien_tabla_periodica": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 3.0
     },
     "despedida": {
-      "precision": 0.75,
-      "recall": 1.0,
-      "f1-score": 0.8571428571428571,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
       "support": 3.0
     },
     "geo_capitales": {
@@ -94,15 +112,15 @@
       "support": 5.0
     },
     "geo_clima": {
-      "precision": 0.6666666666666666,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.6666666666666666,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 3.0
     },
     "geo_continentes": {
-      "precision": 0.8,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1-score": 0.8888888888888888,
+      "f1-score": 1.0,
       "support": 4.0
     },
     "geo_ecuador_provincias": {
@@ -130,9 +148,9 @@
       "support": 2.0
     },
     "geo_guerra_ecuador_peru": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "f1-score": 0.4,
       "support": 2.0
     },
     "geo_relieve": {
@@ -145,7 +163,7 @@
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 1.0
+      "support": 2.0
     },
     "hist_batalla_pichincha": {
       "precision": 1.0,
@@ -154,15 +172,15 @@
       "support": 2.0
     },
     "hist_civilizaciones_antiguas": {
-      "precision": 0.75,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1-score": 0.8571428571428571,
+      "f1-score": 1.0,
       "support": 3.0
     },
     "hist_guerra_cenepa": {
-      "precision": 0.6666666666666666,
-      "recall": 1.0,
-      "f1-score": 0.8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
       "support": 2.0
     },
     "hist_guerra_fria": {
@@ -178,9 +196,9 @@
       "support": 3.0
     },
     "hist_primera_guerra_mundial": {
-      "precision": 1.0,
-      "recall": 0.75,
-      "f1-score": 0.8571428571428571,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
       "support": 4.0
     },
     "hist_revolucion_francesa": {
@@ -190,9 +208,9 @@
       "support": 2.0
     },
     "hist_segunda_guerra_mundial": {
-      "precision": 0.75,
-      "recall": 1.0,
-      "f1-score": 0.8571428571428571,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
       "support": 3.0
     },
     "historia_ecuador_general": {
@@ -202,118 +220,166 @@
       "support": 2.0
     },
     "identidad_bot": {
-      "precision": 0.5,
+      "precision": 1.0,
       "recall": 0.5,
-      "f1-score": 0.5,
+      "f1-score": 0.6666666666666666,
       "support": 2.0
     },
     "info_arreglos_listas": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "precision": 0.3333333333333333,
+      "recall": 0.25,
+      "f1-score": 0.2857142857142857,
+      "support": 4.0
     },
     "info_bases_datos": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 4.0
     },
     "info_bucles": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 4.0
+    },
+    "info_condicionales": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
+    },
+    "info_control_versiones": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
+    },
+    "info_estructuras_datos": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 1.0
+      "support": 2.0
     },
-    "info_condicionales": {
+    "info_frameworks_librerias": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
-      "support": 1.0
-    },
-    "info_control_versiones": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "support": 2.0
     },
     "info_funciones": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 4.0
     },
     "info_inteligencia_artificial": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
-      "support": 1.0
+      "support": 4.0
     },
     "info_programacion_orientada_objetos": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
     },
     "info_que_es_programacion": {
-      "precision": 0.2857142857142857,
-      "recall": 0.8,
-      "f1-score": 0.42105263157894735,
-      "support": 5.0
+      "precision": 0.35,
+      "recall": 1.0,
+      "f1-score": 0.5185185185185185,
+      "support": 7.0
     },
     "info_redes_apis": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 1.0
+      "precision": 0.5714285714285714,
+      "recall": 1.0,
+      "f1-score": 0.7272727272727273,
+      "support": 4.0
+    },
+    "info_tipos_algoritmos": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
     },
     "info_variables": {
-      "precision": 0.6666666666666666,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.6666666666666666,
-      "support": 3.0
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1-score": 0.4,
+      "support": 5.0
     },
-    "leng_figuras_literarias": {
+    "leng_adjetivo": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
       "support": 1.0
+    },
+    "leng_analisis_sintactico": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "leng_figuras_literarias": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
     },
     "leng_generos_literarios": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 1.0
+      "support": 2.0
+    },
+    "leng_ia": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
     },
     "leng_lematizacion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "leng_ortografia_tildes": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "leng_sinonimos_antonimos": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
       "support": 1.0
     },
-    "leng_ortografia_tildes": {
-      "precision": 0.5,
-      "recall": 1.0,
-      "f1-score": 0.6666666666666666,
-      "support": 1.0
-    },
     "leng_sujeto_predicado": {
-      "precision": 1.0,
+      "precision": 0.6666666666666666,
       "recall": 1.0,
-      "f1-score": 1.0,
+      "f1-score": 0.8,
       "support": 2.0
     },
     "leng_sustantivo": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 3.0
+      "support": 4.0
+    },
+    "leng_tiempos_verbales": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
     },
     "leng_verbo": {
-      "precision": 1.0,
-      "recall": 0.5,
-      "f1-score": 0.6666666666666666,
-      "support": 2.0
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
+      "support": 3.0
     },
     "mat_algebra": {
       "precision": 0.0,
@@ -322,9 +388,9 @@
       "support": 2.0
     },
     "mat_derivadas": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
       "support": 2.0
     },
     "mat_division": {
@@ -335,26 +401,26 @@
     },
     "mat_ecuaciones": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
       "support": 2.0
     },
     "mat_fracciones": {
-      "precision": 0.75,
-      "recall": 1.0,
-      "f1-score": 0.8571428571428571,
-      "support": 3.0
-    },
-    "mat_funciones": {
       "precision": 0.6666666666666666,
       "recall": 0.6666666666666666,
       "f1-score": 0.6666666666666666,
       "support": 3.0
     },
-    "mat_geometria": {
+    "mat_funciones": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
+      "support": 3.0
+    },
+    "mat_geometria": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
       "support": 3.0
     },
     "mat_multiplicacion": {
@@ -370,15 +436,15 @@
       "support": 2.0
     },
     "mat_operaciones_basicas": {
-      "precision": 0.5714285714285714,
+      "precision": 0.5333333333333333,
       "recall": 1.0,
-      "f1-score": 0.7272727272727273,
+      "f1-score": 0.6956521739130435,
       "support": 8.0
     },
     "mat_porcentajes": {
-      "precision": 0.6,
-      "recall": 1.0,
-      "f1-score": 0.75,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
       "support": 3.0
     },
     "mat_resta": {
@@ -389,40 +455,40 @@
     },
     "mat_suma": {
       "precision": 1.0,
-      "recall": 0.75,
-      "f1-score": 0.8571428571428571,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 4.0
     },
     "mat_trigonometria": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "no_entiendo": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "saludo": {
       "precision": 1.0,
       "recall": 0.6666666666666666,
       "f1-score": 0.8,
       "support": 3.0
     },
-    "no_entiendo": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 2.0
-    },
-    "saludo": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 3.0
-    },
-    "accuracy": 0.7320261437908496,
+    "accuracy": 0.6885964912280702,
     "macro avg": {
-      "precision": 0.621002132196162,
-      "recall": 0.6350746268656716,
-      "f1-score": 0.6133486135057226,
-      "support": 153.0
+      "precision": 0.7334436930590775,
+      "recall": 0.6626068376068375,
+      "f1-score": 0.6717196105434677,
+      "support": 228.0
     },
     "weighted avg": {
-      "precision": 0.6898692810457516,
-      "recall": 0.7320261437908496,
-      "f1-score": 0.6909925338201912,
-      "support": 153.0
+      "precision": 0.7265567765567766,
+      "recall": 0.6885964912280702,
+      "f1-score": 0.676684366711064,
+      "support": 228.0
     }
   },
   "validacion_disponible": true

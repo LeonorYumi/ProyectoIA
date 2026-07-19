@@ -2,44 +2,260 @@
   "intents": [
     {
       "tag": "leng_sustantivo",
-      "patterns": ["que es un sustantivo", "tipos de sustantivos cuales son", "que es un sustantivo propio", "que es un sustantivo comun", "ejemplos de sustantivos", "cual es la diferencia entre sustantivo propio y comun", "que son los sustantivos abstractos", "sustantivos concretos que son", "cual es un sustantivo colectivo", "que es un sustantivo individual", "ejemplos de sustantivos propios", "ejemplos de sustantivos comunes", "que es un sustantivo compuesto", "cuales son los tipos de sustantivos", "ejemplos de sustantivos abstractos"],
-      "responses": ["Un sustantivo es la palabra que nombra personas, animales, lugares o cosas, por ejemplo: perro, Quito, mesa.", "Los sustantivos pueden ser propios (nombran algo específico, como 'María') o comunes (nombran algo genérico, como 'niña')."]
+      "patterns": [
+        "que es un sustantivo",
+        "tipos de sustantivos cuales son",
+        "que es un sustantivo propio",
+        "que es un sustantivo comun",
+        "ejemplos de sustantivos",
+        "cual es la diferencia entre sustantivo propio y comun",
+        "que son los sustantivos abstractos",
+        "sustantivos concretos que son",
+        "cual es un sustantivo colectivo",
+        "que es un sustantivo individual",
+        "ejemplos de sustantivos propios",
+        "ejemplos de sustantivos comunes",
+        "que es un sustantivo compuesto",
+        "cuales son los tipos de sustantivos",
+        "ejemplos de sustantivos abstractos",
+        "diferencia entre sustantivo concreto y abstracto",
+        "que son los sustantivos contables",
+        "que son los sustantivos incontables",
+        "ejemplos de sustantivos colectivos",
+        "que es un sustantivo gentilicio"
+      ],
+      "responses": [
+        "Un sustantivo es una palabra que nombra personas, animales, lugares, objetos o ideas (ej: mesa, alegría, Pedro, Ecuador).",
+        "Los sustantivos se clasifican en: PROPIOS (nombran algo específico: 'María', 'Quito') y COMUNES (nombran algo genérico: 'niña', 'ciudad').",
+        "Los sustantivos también pueden ser: CONCRETOS (se perciben con los sentidos: 'perro') y ABSTRACTOS (son ideas o sentimientos: 'amor', 'felicidad').",
+        "Ejemplos de sustantivos propios: 'Juan', 'Londres', 'Amazonas'. Ejemplos de comunes: 'hombre', 'país', 'río'."
+      ]
     },
     {
       "tag": "leng_verbo",
-      "patterns": ["que es un verbo", "tipos de verbos cuales son", "que es un verbo conjugado", "que es el infinitivo de un verbo", "ejemplos de verbos", "que es un verbo transitivo", "que es un verbo intransitivo", "como se conjugan los verbos", "que es un verbo regular", "que es un verbo irregular", "cual es la diferencia entre verbo y adjetivo"],
-      "responses": ["Un verbo es la palabra que expresa una acción, estado o proceso, por ejemplo: correr, ser, pensar.", "El infinitivo es la forma no conjugada del verbo y siempre termina en -ar, -er o -ir (ej. cantar, comer, vivir)."]
+      "patterns": [
+        "que es un verbo",
+        "tipos de verbos cuales son",
+        "que es un verbo conjugado",
+        "que es el infinitivo de un verbo",
+        "ejemplos de verbos",
+        "que es un verbo transitivo",
+        "que es un verbo intransitivo",
+        "como se conjugan los verbos",
+        "que es un verbo regular",
+        "que es un verbo irregular",
+        "cual es la diferencia entre verbo y adjetivo",
+        "que son los verbos copulativos",
+        "que son los verbos reflexivos",
+        "ejemplos de verbos regulares e irregulares",
+        "como identificar un verbo en una oracion"
+      ],
+      "responses": [
+        "Un verbo expresa acciones, estados o procesos (ej: cantar, soñar, existir, correr).",
+        "Los verbos se conjugan en: tiempo (presente, pasado, futuro), modo (indicativo, subjuntivo, imperativo) y persona (yo, tú, él, nosotros, vosotros, ellos).",
+        "Los verbos regulares mantienen su raíz al conjugarse (ej: cantar-canté-cantaré), mientras que los irregulares cambian (ej: tener-tuve-tendré).",
+        "El infinitivo es la forma no conjugada del verbo y termina en -AR, -ER o -IR (ej: saltar, comer, vivir)."
+      ]
     },
     {
       "tag": "leng_sujeto_predicado",
-      "patterns": ["que es el sujeto de una oracion", "que es el predicado", "como identifico el sujeto en una oracion", "partes de una oracion cuales son", "como encontrar el sujeto y predicado", "que es el complemento directo", "que es el complemento indirecto", "que es una oración simple"],
-      "responses": ["El sujeto es quien realiza la acción en la oración, y el predicado es todo lo que se dice sobre el sujeto (normalmente incluye el verbo).", "Para identificar el sujeto, preguntas '¿quién realiza la acción?'; el resto de la oración suele ser el predicado."]
+      "patterns": [
+        "que es el sujeto de una oracion",
+        "que es el predicado",
+        "como identifico el sujeto en una oracion",
+        "partes de una oracion cuales son",
+        "como encontrar el sujeto y predicado",
+        "que es el complemento directo",
+        "que es el complemento indirecto",
+        "que es una oración simple",
+        "que es una oracion compuesta",
+        "diferencia entre sujeto y predicado",
+        "ejemplos de oraciones con sujeto y predicado"
+      ],
+      "responses": [
+        "El sujeto es quien realiza la acción o de quien se habla en la oración, mientras que el predicado es todo lo que se dice sobre el sujeto.",
+        "Para identificar el sujeto, preguntas '¿QUIÉN?' o '¿QUÉ?' realiza la acción. El resto de la oración es el predicado.",
+        "El complemento directo (CD) responde a '¿QUÉ?' y el complemento indirecto (CI) responde a '¿A QUIÉN?' o '¿PARA QUIÉN?'.",
+        "Ejemplo: 'María (sujeto) estudia matemáticas (predicado)' - CD: matemáticas"
+      ]
     },
     {
       "tag": "leng_figuras_literarias",
-      "patterns": ["que es una metafora", "que es un simil", "que son las figuras literarias", "que es una hiperbole", "diferencia entre metafora y simil"],
-      "responses": ["Las figuras literarias son recursos que usan los escritores para embellecer o dar más fuerza al lenguaje, como la metáfora, el símil y la hipérbole.", "La metáfora compara dos cosas sin usar 'como' (ej. 'sus ojos son estrellas'), mientras el símil sí usa 'como' (ej. 'sus ojos brillan como estrellas')."]
+      "patterns": [
+        "que es una metafora",
+        "que es un simil",
+        "que son las figuras literarias",
+        "que es una hiperbole",
+        "diferencia entre metafora y simil",
+        "que es la personificacion",
+        "que es la onomatopeya",
+        "ejemplos de figuras literarias",
+        "que es el símil",
+        "que es una analogia"
+      ],
+      "responses": [
+        "Las figuras literarias son recursos estilísticos que embellecen o intensifican el lenguaje, como la metáfora, el símil y la hipérbole.",
+        "La METÁFORA compara dos elementos sin usar 'como' (ej: 'Tus ojos son dos luceros'). El SÍMIL o comparación sí usa 'como' (ej: 'Tus ojos brillan como luceros').",
+        "La HIPÉRBOLE es una exageración (ej: 'Te he llamado mil veces'). La PERSONIFICACIÓN atribuye cualidades humanas a objetos (ej: 'El sol sonríe').",
+        "La ONOMATOPEYA imita sonidos reales (ej: 'El pío-pío de los pollitos')."
+      ]
     },
     {
       "tag": "leng_ortografia_tildes",
-      "patterns": ["cuando lleva tilde una palabra", "que es una palabra aguda", "que es una palabra grave", "que es una palabra esdrujula", "reglas de acentuacion cuales son"],
-      "responses": ["Las palabras agudas llevan tilde si terminan en n, s o vocal (ej. camión); las graves si NO terminan en n, s o vocal (ej. árbol); las esdrújulas siempre llevan tilde (ej. médico).", "La acentuación depende de dónde cae la sílaba tónica: agudas (última sílaba), graves (penúltima) y esdrújulas (antepenúltima)."]
+      "patterns": [
+        "cuando lleva tilde una palabra",
+        "que es una palabra aguda",
+        "que es una palabra grave",
+        "que es una palabra esdrujula",
+        "reglas de acentuacion cuales son",
+        "que es una palabra sobreesdrujula",
+        "diferencia entre tilde y acento",
+        "ejemplos de palabras agudas",
+        "ejemplos de palabras graves",
+        "ejemplos de palabras esdrujulas",
+        "cuando se tildan las palabras agudas"
+      ],
+      "responses": [
+        "Las palabras AGUDAS llevan tilde cuando terminan en N, S o vocal (ej: camión, inglés, café).",
+        "Las palabras GRAVES o llanas llevan tilde cuando NO terminan en N, S o vocal (ej: árbol, lápiz, fácil).",
+        "Las palabras ESDRÚJULAS SIEMPRE llevan tilde (ej: médico, pájaro, América).",
+        "Las SOBREESDRÚJULAS también SIEMPRE llevan tilde y son palabras con el acento en la sílaba anterior a la antepenúltima (ej: cuéntamelo, devuélvemelo)."
+      ]
     },
     {
       "tag": "leng_generos_literarios",
-      "patterns": ["cuales son los generos literarios", "que es el genero narrativo", "que es el genero lirico", "que es el genero dramatico", "diferencia entre novela y cuento"],
-      "responses": ["Los tres géneros literarios principales son: narrativo (cuentos, novelas), lírico (poesía) y dramático (obras de teatro).", "Una novela es una narración larga con tramas complejas, mientras que un cuento es más breve y suele centrarse en un solo conflicto."]
+      "patterns": [
+        "cuales son los generos literarios",
+        "que es el genero narrativo",
+        "que es el genero lirico",
+        "que es el genero dramatico",
+        "diferencia entre novela y cuento",
+        "que es una novela",
+        "que es un cuento",
+        "que es la poesia",
+        "que es el teatro",
+        "subgeneros literarios cuales son"
+      ],
+      "responses": [
+        "Los géneros literarios principales son: NARRATIVO (cuentos, novelas), LÍRICO (poesía) y DRAMÁTICO (obras de teatro).",
+        "Una NOVELA es una narración extensa con tramas complejas y múltiples personajes. Un CUENTO es breve y se centra en un conflicto único.",
+        "La POESÍA o género lírico expresa sentimientos y emociones a través del verso. El TEATRO o drama se representa en escena con diálogos.",
+        "Subgéneros narrativos: épica, epopeya, romance. Subgéneros líricos: oda, elegía, soneto. Subgéneros dramáticos: tragedia, comedia, drama."
+      ]
     },
-     {
+    {
       "tag": "leng_lematizacion",
-      "patterns": ["que es la lematizacion", "lematizacion", "que es lematizacion", "como se lematiza una palabra", "como se hace la lematizacion", "que es el lema de una palabra", "diferencia entre lema y forma inflexional"],
-      "responses": ["La lematización es el proceso de reducir las palabras a su forma básica o lema (por ejemplo, 'corriendo' se lematiza como 'correr').", "El lema es la forma básica de una palabra, mientras que la forma inflexional es la variación que toma según su uso en la oración."]
+      "patterns": [
+        "que es la lematizacion",
+        "lematizacion",
+        "que es lematizacion",
+        "como se lematiza una palabra",
+        "como se hace la lematizacion",
+        "que es el lema de una palabra",
+        "diferencia entre lema y forma inflexional",
+        "ejemplos de lematizacion",
+        "para que sirve la lematizacion"
+      ],
+      "responses": [
+        "La LEMATIZACIÓN es el proceso de reducir palabras a su forma base o lema. Por ejemplo: 'corriendo' → 'correr', 'hermosísimo' → 'hermoso'.",
+        "El LEMA es la forma básica de una palabra (como aparece en el diccionario). La forma inflexional son las variaciones (conjugaciones, plurales, etc.).",
+        "La lematización es fundamental en el Procesamiento del Lenguaje Natural (PLN) para unificar palabras y mejorar la búsqueda semántica.",
+        "Ejemplos de lematización: 'gatos' → 'gato', 'comimos' → 'comer', 'bellísima' → 'bello'."
+      ]
     },
-
-     {
+    {
       "tag": "leng_ia",
-      "patterns": ["que es la IA", "IA"],
-      "responses": ["La inteligencia artificial es la simulación de procesos mentales humanos por parte de máquinas, especialmente sistemas informáticos.", "El lema es la forma básica de una palabra, mientras que la forma inflexional es la variación que toma según su uso en la oración."]
+      "patterns": [
+        "que es la IA",
+        "que es inteligencia artificial",
+        "IA",
+        "inteligencia artificial",
+        "como funciona la inteligencia artificial",
+        "para que sirve la IA",
+        "tipos de inteligencia artificial",
+        "que es el machine learning",
+        "que es el procesamiento del lenguaje natural",
+        "como se aplica la IA en el lenguaje"
+      ],
+      "responses": [
+        "La INTELIGENCIA ARTIFICIAL (IA) es la simulación de procesos mentales humanos por parte de máquinas, como el aprendizaje y el razonamiento.",
+        "El MACHINE LEARNING o aprendizaje automático permite a las máquinas aprender sin ser programadas explícitamente.",
+        "El PROCESAMIENTO DEL LENGUAJE NATURAL (PLN) es la rama de la IA que permite a las máquinas entender y generar lenguaje humano.",
+        "La IA se aplica en: asistentes virtuales, traducción automática, análisis de sentimientos, chatbots educativos como PoliBot."
+      ]
+    },
+    {
+      "tag": "leng_sinonimos_antonimos",
+      "patterns": [
+        "que son los sinonimos",
+        "que son los antonimos",
+        "ejemplos de sinonimos",
+        "ejemplos de antonimos",
+        "diferencia entre sinonimo y antonimo",
+        "que es un sinonimo",
+        "que es un antonimo"
+      ],
+      "responses": [
+        "Los SINÓNIMOS son palabras que tienen un significado similar o idéntico (ej: feliz/contento/alegre).",
+        "Los ANTÓNIMOS son palabras con significado opuesto (ej: grande/pequeño, amor/odio, luz/oscuridad).",
+        "Los sinónimos pueden ser totales (significado exacto) o parciales (significado similar en contexto).",
+        "Los antónimos pueden ser graduales (frío/caliente), complementarios (vivo/muerto) o recíprocos (comprar/vender)."
+      ]
+    },
+    {
+      "tag": "leng_analisis_sintactico",
+      "patterns": [
+        "que es el analisis sintactico",
+        "como se analiza una oracion",
+        "analisis sintactico de oraciones",
+        "partes de la oracion",
+        "que es el nucleo del sujeto",
+        "que es el nucleo del predicado",
+        "como identificar el nucleo"
+      ],
+      "responses": [
+        "El ANÁLISIS SINTÁCTICO estudia la estructura de las oraciones y la función de cada palabra.",
+        "El NÚCLEO DEL SUJETO es el verbo en la oración: 'María (sujeto) estudia (núcleo) todos los días'.",
+        "El SUJETO está formado por el núcleo (sustantivo) y sus modificadores: 'El niño (núcleo) alto (modificador) corre'.",
+        "El PREDICADO incluye el verbo y todos sus complementos: 'Estudia (verbo) matemáticas (CD) en la biblioteca (CCL)'."
+      ]
+    },
+    {
+      "tag": "leng_adjetivo",
+      "patterns": [
+        "que es un adjetivo",
+        "tipos de adjetivos",
+        "que es un adjetivo calificativo",
+        "que es un adjetivo demostrativo",
+        "que es un adjetivo posesivo",
+        "ejemplos de adjetivos",
+        "diferencia entre adjetivo y sustantivo"
+      ],
+      "responses": [
+        "Un ADJETIVO es una palabra que modifica o describe al sustantivo (ej: 'casa GRANDE', 'día SOLEADO').",
+        "Adjetivos CALIFICATIVOS: describen cualidades (bonito, alto, amable).",
+        "Adjetivos DEMOSTRATIVOS: indican ubicación (este, ese, aquel).",
+        "Adjetivos POSESIVOS: indican pertenencia (mi, tu, su, nuestro, vuestro)."
+      ]
+    },
+    {
+      "tag": "leng_tiempos_verbales",
+      "patterns": [
+        "tiempos verbales cuales son",
+        "que es el presente",
+        "que es el pasado",
+        "que es el futuro",
+        "tiempos verbales ejemplos",
+        "como se conjugan los verbos en pasado",
+        "diferencia entre pretérito y copretérito"
+      ],
+      "responses": [
+        "Los TIEMPOS VERBALES indican cuándo ocurre la acción: PRESENTE (ahora), PASADO (antes) y FUTURO (después).",
+        "Ejemplo de PRESENTE: 'Yo CAMINO'. Ejemplo de PASADO: 'Yo CAMINÉ'. Ejemplo de FUTURO: 'Yo CAMINARÉ'.",
+        "El PRETÉRITO PERFECTO SIMPLE: 'canté' (acción pasada finalizada).",
+        "El PRETÉRITO IMPERFECTO: 'cantaba' (acción pasada no finalizada o habitual).",
+        "El FUTURO PERFECTO: 'habré cantado' (acción futura finalizada)."
+      ]
     }
   ]
 }
