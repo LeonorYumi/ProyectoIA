@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).parent
 
 def normalizar_texto(texto: str) -> str:
     texto = texto.lower().strip()
-    # Normaliza operadores matemáticos comunes para que consultas como "2+2" se entiendan mejor.
+    # Normaliza 
     texto = re.sub(r'(?<=\d)\s*([+])\s*(?=\d)', ' mas ', texto)
     texto = re.sub(r'(?<=\d)\s*([-])\s*(?=\d)', ' menos ', texto)
     texto = re.sub(r'(?<=\d)\s*([x×*])\s*(?=\d)', ' por ', texto)
