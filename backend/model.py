@@ -43,15 +43,15 @@ def entrenar_modelo(params: dict = None):
             X_vec,
             y,
             test_size=parametros["test_size"],
-            random_state=42, # Se mantiene el estado aleatorio para reproducibilidad
-            stratify=y, # Asegura que la proporción de cada categoría se mantenga en train/test
+            random_state=42,
+            stratify=y, 
         )
         hay_validacion = True
     except ValueError:
         X_train, X_test, y_train, y_test = X_vec, None, y, None
         hay_validacion = False
 
-    # Corrección definitiva: solo dejamos solver="lbfgs" y max_iter para evitar el warning de convergencia
+    
     clasificador = LogisticRegression(C=parametros["C"], max_iter=3000, solver="lbfgs")
     clasificador.fit(X_train, y_train)
 
