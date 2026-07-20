@@ -1,6 +1,152 @@
 {
   "intents": [
     {
+      "tag": "mat_clasificacion_numeros",
+      "patterns": [
+        "tipos de numeros cuales son",
+        "que son los numeros naturales",
+        "que son los numeros enteros",
+        "que son los numeros racionales",
+        "que son los numeros irracionales",
+        "que son los numeros reales",
+        "diferencia entre numero racional e irracional",
+        "que es un numero natural",
+        "que es un numero entero",
+        "ejemplos de numeros irracionales",
+        "clasificacion de los numeros",
+        "que son los numeros racionales e irracionales",
+        "diferencia entre numero entero y natural",
+        "que numeros son reales"
+      ],
+      "responses": [
+        "Los NÚMEROS NATURALES (N) son los que usamos para contar: 1, 2, 3, 4... (en algunos contextos se incluye el 0). Sirven para expresar cantidades enteras y positivas.",
+        "Los NÚMEROS ENTEROS (Z) incluyen a los naturales y ademas los negativos: ..., -3, -2, -1, 0, 1, 2, 3... No tienen parte decimal.",
+        "Los NÚMEROS RACIONALES (Q) son los que se pueden escribir como una fraccion de dos enteros, con denominador distinto de 0 (ej: 1/2, 3, -4/5, 0.75). Los NÚMEROS IRRACIONALES NO se pueden escribir como fraccion exacta: tienen decimales infinitos y no periodicos (ej: pi = 3.14159..., raiz de 2 = 1.41421...).",
+        "Los NÚMEROS REALES (R) agrupan a todos los anteriores: naturales, enteros, racionales e irracionales. Practicamente cualquier numero que uses en la vida cotidiana es un numero real.",
+        "Ejemplo de clasificacion: el numero 5 es natural, entero, racional y real. El numero -3 es entero, racional y real (pero no natural). El numero 1/2 es racional y real (pero no entero ni natural). El numero pi es irracional y real."
+      ]
+    },
+    {
+      "tag": "mat_potencias_raices",
+      "patterns": [
+        "que es una potencia",
+        "propiedades de las potencias cuales son",
+        "que es un exponente",
+        "como se resuelve una potencia",
+        "que es una raiz cuadrada",
+        "como se simplifica una raiz",
+        "propiedades de las raices",
+        "que es la radicacion",
+        "potencia de un numero negativo",
+        "que es elevar al cuadrado",
+        "reglas de los exponentes",
+        "producto de potencias de la misma base",
+        "division de potencias de la misma base",
+        "potencia de una potencia",
+        "que es una raiz cubica",
+        "cuanto es una potencia elevada a 0",
+        "que pasa con un exponente negativo"
+      ],
+      "responses": [
+        "Una POTENCIA representa una multiplicacion repetida de un mismo numero: 2 elevado a 4 (2⁴) significa 2×2×2×2 = 16. El numero que se repite es la BASE (2) y el numero de veces que se multiplica es el EXPONENTE (4).",
+        "Reglas basicas de exponentes: al multiplicar potencias de igual base, se SUMAN los exponentes (2² × 2³ = 2⁵). Al dividir, se RESTAN (2⁵ ÷ 2² = 2³). Al elevar una potencia a otra potencia, se MULTIPLICAN (2²)³ = 2⁶. Cualquier numero elevado a 0 es igual a 1, y un exponente negativo indica el reciproco: 2⁻² = 1/2² = 1/4.",
+        "La RAÍZ CUADRADA de un numero es el valor que, multiplicado por si mismo, da ese numero (ej: √16 = 4, porque 4×4 = 16). Es la operacion inversa de elevar al cuadrado. La RAÍZ CÚBICA funciona igual pero con tres factores iguales (ej: ∛27 = 3, porque 3×3×3 = 27).",
+        "Para simplificar una raiz, se busca descomponer el numero en factores donde alguno sea un cuadrado perfecto. Por ejemplo, √50 = √(25×2) = √25 × √2 = 5√2."
+      ]
+    },
+    {
+      "tag": "mat_mcd_mcm",
+      "patterns": [
+        "que es el mcd",
+        "que es el mcm",
+        "como se saca el mcd",
+        "como se saca el mcm",
+        "diferencia entre mcd y mcm",
+        "maximo comun divisor que es",
+        "minimo comun multiplo que es",
+        "como calcular el mcd de dos numeros",
+        "como calcular el mcm de dos numeros",
+        "para que sirve el mcm",
+        "para que sirve el mcd",
+        "ejemplo de mcd y mcm"
+      ],
+      "responses": [
+        "El MÁXIMO COMÚN DIVISOR (MCD) de dos o mas numeros es el numero mas grande que los divide exactamente a todos, sin dejar residuo. Se usa mucho para simplificar fracciones.",
+        "El MÍNIMO COMÚN MÚLTIPLO (MCM) es el numero mas pequeño (distinto de 0) que es multiplo de todos los numeros dados. Se usa mucho para sumar o restar fracciones con distinto denominador.",
+        "Para calcular el MCD y el MCM, una forma comun es descomponer los numeros en sus factores primos. Ejemplo con 12 y 18: 12 = 2² × 3, y 18 = 2 × 3². El MCD toma los factores comunes con el menor exponente: 2 × 3 = 6. El MCM toma todos los factores con el mayor exponente: 2² × 3² = 36.",
+        "Diferencia clave: el MCD siempre es menor o igual que los numeros originales (busca lo que 'divide' a ambos), mientras que el MCM siempre es mayor o igual (busca lo que 'contiene' a ambos como multiplo)."
+      ]
+    },
+    {
+      "tag": "mat_sistemas_ecuaciones",
+      "patterns": [
+        "que es un sistema de ecuaciones",
+        "como resuelvo un sistema de ecuaciones",
+        "metodo de sustitucion que es",
+        "metodo de igualacion que es",
+        "metodo de reduccion que es",
+        "sistema de ecuaciones con dos incognitas",
+        "como resolver un sistema por sustitucion",
+        "que es el metodo de eliminacion",
+        "ejemplo de sistema de ecuaciones",
+        "que metodos hay para resolver sistemas de ecuaciones",
+        "como resolver un sistema por reduccion",
+        "sistemas de ecuaciones lineales que son"
+      ],
+      "responses": [
+        "Un SISTEMA DE ECUACIONES es un conjunto de dos o mas ecuaciones que comparten las mismas incognitas, y cuya solucion es el conjunto de valores que cumple TODAS las ecuaciones a la vez. Ejemplo: x + y = 10, x - y = 2.",
+        "El METODO DE SUSTITUCIÓN consiste en despejar una incognita en una ecuacion y reemplazarla en la otra. Ejemplo: de x + y = 10 despejamos x = 10 - y, y lo sustituimos en x - y = 2: (10 - y) - y = 2, entonces 10 - 2y = 2, y = 4, y por lo tanto x = 6.",
+        "El METODO DE IGUALACIÓN consiste en despejar la MISMA incognita en ambas ecuaciones y luego igualar las dos expresiones entre si. El METODO DE REDUCCIÓN (o eliminacion) consiste en sumar o restar las ecuaciones (multiplicandolas si hace falta) para que una de las incognitas se cancele.",
+        "Ejemplo de reduccion con x + y = 10 y x - y = 2: si sumamos ambas ecuaciones, la 'y' se cancela: 2x = 12, entonces x = 6, y sustituyendo, y = 4. El resultado final es el mismo con cualquiera de los tres metodos."
+      ]
+    },
+    {
+      "tag": "mat_estadistica",
+      "patterns": [
+        "que es la media",
+        "que es la mediana",
+        "que es la moda",
+        "como se calcula la media",
+        "que es la probabilidad",
+        "como se calcula una probabilidad",
+        "que es la estadistica",
+        "medidas de tendencia central cuales son",
+        "como se calcula la mediana",
+        "como se calcula la moda",
+        "ejemplo de probabilidad simple",
+        "diferencia entre media mediana y moda",
+        "que es un evento en probabilidad"
+      ],
+      "responses": [
+        "La ESTADÍSTICA es la rama de las matematicas que recolecta, organiza, analiza e interpreta datos para sacar conclusiones. Las MEDIDAS DE TENDENCIA CENTRAL (media, mediana y moda) resumen un conjunto de datos en un solo valor representativo.",
+        "La MEDIA (o promedio) se calcula sumando todos los valores y dividiendo entre la cantidad de datos. Ejemplo: para 4, 8, 6, 5, 7, la suma es 30 y hay 5 datos, entonces la media es 30/5 = 6.",
+        "La MEDIANA es el valor que queda justo en el medio cuando los datos estan ordenados de menor a mayor. Ejemplo: en 4, 5, 6, 7, 8 (ya ordenados), la mediana es 6. Si hay un numero par de datos, la mediana es el promedio de los dos valores centrales.",
+        "La MODA es el valor que mas se repite en el conjunto de datos. Puede no existir (si no se repite ninguno) o haber mas de una (si varios valores empatan en frecuencia).",
+        "La PROBABILIDAD mide que tan posible es que ocurra un evento, y se calcula como: casos favorables dividido entre casos posibles. Ejemplo: la probabilidad de sacar un numero par al lanzar un dado es 3/6 = 1/2, porque hay 3 numeros pares (2, 4, 6) de 6 posibles."
+      ]
+    },
+    {
+      "tag": "mat_logaritmos",
+      "patterns": [
+        "que es un logaritmo",
+        "propiedades de los logaritmos",
+        "relacion entre logaritmo y potencia",
+        "como se resuelve un logaritmo",
+        "que es el logaritmo natural",
+        "logaritmo base 10 que es",
+        "leyes de los logaritmos",
+        "para que sirve un logaritmo",
+        "logaritmo de un producto",
+        "logaritmo de un cociente"
+      ],
+      "responses": [
+        "Un LOGARITMO responde a la pregunta '¿a que exponente hay que elevar una base para obtener un numero dado?'. Se escribe log base b de x, y es la operacion inversa de la potenciacion. Ejemplo: log base 2 de 8 = 3, porque 2 elevado a 3 = 8.",
+        "El LOGARITMO NATURAL (ln) usa como base el numero e (aproximadamente 2.718). El LOGARITMO DECIMAL o de base 10 (log) es el mas comun en calculos cotidianos y calculadoras.",
+        "Propiedades de los logaritmos: el logaritmo de un PRODUCTO es la suma de los logaritmos (log(a×b) = log a + log b), el de un COCIENTE es la resta (log(a/b) = log a - log b), y el de una POTENCIA es el exponente multiplicando al logaritmo (log(a^n) = n × log a).",
+        "Los logaritmos se usan para resolver ecuaciones donde la incognita esta en el exponente. Ejemplo: para resolver 2^x = 8, aplicamos logaritmo a ambos lados: x = log base 2 de 8 = 3."
+      ]
+    },
+    {
       "tag": "mat_suma",
       "patterns": [
         "que es la suma",
@@ -122,7 +268,6 @@
         "que es una fraccion propia e impropia",
         "como sumar fracciones con diferente denominador",
         "como restar fracciones",
-        "que es el minimo comun multiplo",
         "como simplificar una fraccion paso a paso"
       ],
       "responses": [

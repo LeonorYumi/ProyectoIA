@@ -44,9 +44,11 @@ function App() {
   const [metricas, setMetricas] = useState(null);
   const [modeloEntrenado, setModeloEntrenado] = useState(false);
   const [errorMensaje, setErrorMensaje] = useState('');
-  const [sidebarOpen, setSidebarOpen] = useState(false); 
-  const [configOpen, setConfigOpen] = useState(false); 
+  const [sidebarOpen, setSidebarOpen] = useState(false); // toggle del panel lateral en móvil
+  const [configOpen, setConfigOpen] = useState(false); // desplegable de hiperparámetros
 
+  // Modo desarrollador: oculto para el usuario normal, se activa haciendo
+  // clic 5 veces seguidas sobre el ícono del búho en el panel lateral.
   const [modoDesarrollador, setModoDesarrollador] = useState(
     () => localStorage.getItem(DEV_MODE_KEY) === 'true'
   );
@@ -99,9 +101,9 @@ function App() {
   const verificarServidor = async () => {
     try {
       setErrorMensaje('');
-      const respuesta = await axios.get(`${API_BASE}/estado`);
+      const respuesta = await axios.get(`${API_BASE}/health`);
 
-      if (respuesta.data.modelo === 'Entrenado') {
+      if (respuesta.data.modelo_cargado === true) {
         setModeloEntrenado(true);
         await cargarMetricas();
       } else {
@@ -117,7 +119,7 @@ function App() {
 
   const cargarMetricas = async () => {
     try {
-      const respuesta = await axios.get(`${API_BASE}/metricas`);
+      const respuesta = await axios.get(`${API_BASE}/metrics`);
       setMetricas(respuesta.data);
     } catch (error) {
       console.error('Error al cargar métricas:', error);
@@ -130,7 +132,7 @@ function App() {
     setErrorMensaje('');
 
     try {
-      await axios.post(`${API_BASE}/entrenar`, {
+      await axios.post(`${API_BASE}/train`, {
         epochs: Number(epochs),
         learning_rate: Number(lr)
       });
@@ -180,7 +182,7 @@ function App() {
     setErrorMensaje('');
 
     try {
-      const respuesta = await axios.post(`${API_BASE}/chatbot`, {
+      const respuesta = await axios.post(`${API_BASE}/chat`, {
         pregunta: preguntaActual
       });
 
@@ -220,8 +222,7 @@ function App() {
     ]);
   };
 
-  //  Historial de conversaciones (local Storage)
-
+  // Historial de conversaciones
   const iniciarNuevaConversacion = () => {
     const nueva = crearConversacion();
 
@@ -274,7 +275,7 @@ function App() {
     });
   };
 
-  // Modo desarrollador (oculto) 
+  //Modo desarrollador oculto
 
   const manejarClicMarca = () => {
     clicksMarcaRef.current += 1;

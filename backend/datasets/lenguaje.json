@@ -63,12 +63,9 @@
         "que es el sujeto de una oracion",
         "que es el predicado",
         "como identifico el sujeto en una oracion",
-        "partes de una oracion cuales son",
         "como encontrar el sujeto y predicado",
         "que es el complemento directo",
         "que es el complemento indirecto",
-        "que es una oración simple",
-        "que es una oracion compuesta",
         "diferencia entre sujeto y predicado",
         "ejemplos de oraciones con sujeto y predicado"
       ],
@@ -77,6 +74,141 @@
         "Para identificar el sujeto, preguntas '¿QUIÉN?' o '¿QUÉ?' realiza la acción. El resto de la oración es el predicado.",
         "El complemento directo (CD) responde a '¿QUÉ?' y el complemento indirecto (CI) responde a '¿A QUIÉN?' o '¿PARA QUIÉN?'.",
         "Ejemplo: 'María (sujeto) estudia matemáticas (predicado)' - CD: matemáticas"
+      ]
+    },
+    {
+      "tag": "leng_oracion",
+      "patterns": [
+        "que es una oracion",
+        "que es una oracion gramatical",
+        "definicion de oracion",
+        "que caracteriza a una oracion",
+        "tipos de oraciones segun la actitud del hablante",
+        "que es una oracion enunciativa",
+        "que es una oracion interrogativa",
+        "que es una oracion exclamativa",
+        "que es una oracion imperativa",
+        "que es una oracion desiderativa",
+        "que es una oracion dubitativa",
+        "diferencia entre oracion simple y compuesta",
+        "que es una oracion simple",
+        "que es una oracion compuesta",
+        "ejemplos de tipos de oraciones",
+        "cuantos tipos de oraciones hay",
+        "que es una frase y que es una oracion",
+        "diferencia entre frase y oracion"
+      ],
+      "responses": [
+        "Una ORACIÓN es la unidad mínima de comunicación con sentido completo, formada por sujeto y predicado, que además lleva un verbo conjugado (ej: 'El perro ladra').",
+        "Según la actitud del hablante, las oraciones pueden ser: ENUNCIATIVAS (afirman o niegan algo: 'Llueve'), INTERROGATIVAS (preguntan: '¿Llueve?'), EXCLAMATIVAS (expresan emoción: '¡Cómo llueve!') e IMPERATIVAS (dan órdenes: '¡Cierra la puerta!').",
+        "También existen las DESIDERATIVAS (expresan un deseo: 'Ojalá llueva') y las DUBITATIVAS (expresan duda: 'Quizás llueva').",
+        "Una ORACIÓN SIMPLE tiene un solo verbo conjugado ('María estudia'). Una ORACIÓN COMPUESTA tiene dos o más verbos conjugados unidos por una conjunción o signo de puntuación ('María estudia y Juan trabaja').",
+        "La diferencia entre FRASE y ORACIÓN es que la frase no tiene verbo conjugado y no expresa una idea completa (ej: 'un día soleado'), mientras que la oración sí lo tiene (ej: 'Hoy hace un día soleado')."
+      ]
+    },
+    {
+      "tag": "leng_pronombre",
+      "patterns": [
+        "que es un pronombre",
+        "tipos de pronombres cuales son",
+        "que es un pronombre personal",
+        "que es un pronombre posesivo",
+        "que es un pronombre demostrativo",
+        "que es un pronombre relativo",
+        "que es un pronombre indefinido",
+        "que es un pronombre interrogativo",
+        "ejemplos de pronombres",
+        "diferencia entre pronombre y sustantivo",
+        "cuales son los pronombres personales"
+      ],
+      "responses": [
+        "Un PRONOMBRE es una palabra que sustituye al sustantivo para evitar repetirlo (ej: 'Ana llegó' → 'ELLA llegó').",
+        "Pronombres PERSONALES: yo, tú, él/ella, nosotros, vosotros, ellos/ellas. Indican quién realiza o recibe la acción.",
+        "Pronombres POSESIVOS: mío, tuyo, suyo, nuestro (ej: 'Ese libro es MÍO').",
+        "Pronombres DEMOSTRATIVOS: este, ese, aquel (ej: 'ESTE es el mejor'). RELATIVOS: que, quien, cual (ej: 'La casa QUE compré').",
+        "Pronombres INDEFINIDOS: algo, nadie, alguno (no precisan a quién se refieren). INTERROGATIVOS: qué, quién, cuál (ej: '¿QUIÉN llamó?')."
+      ]
+    },
+    {
+      "tag": "leng_adverbio",
+      "patterns": [
+        "que es un adverbio",
+        "tipos de adverbios cuales son",
+        "que es un adverbio de lugar",
+        "que es un adverbio de tiempo",
+        "que es un adverbio de modo",
+        "que es un adverbio de cantidad",
+        "ejemplos de adverbios",
+        "diferencia entre adverbio y adjetivo",
+        "que funcion cumple el adverbio"
+      ],
+      "responses": [
+        "Un ADVERBIO es una palabra invariable que modifica al verbo, a un adjetivo o a otro adverbio, aportando información sobre cómo, cuándo, dónde o cuánto (ej: 'Corre RÁPIDO').",
+        "Adverbios de LUGAR: aquí, allí, cerca, lejos. De TIEMPO: hoy, ayer, siempre, nunca.",
+        "Adverbios de MODO: bien, mal, así, y los terminados en '-mente' (rápidamente, lentamente). De CANTIDAD: mucho, poco, bastante, demasiado.",
+        "A diferencia del adjetivo, el adverbio no concuerda en género ni número y no modifica a un sustantivo, sino al verbo, al adjetivo u otro adverbio."
+      ]
+    },
+    {
+      "tag": "leng_preposicion_conjuncion",
+      "patterns": [
+        "que es una preposicion",
+        "ejemplos de preposiciones",
+        "cuales son las preposiciones",
+        "que es una conjuncion",
+        "ejemplos de conjunciones",
+        "tipos de conjunciones cuales son",
+        "que es una conjuncion coordinante",
+        "que es una conjuncion subordinante",
+        "diferencia entre preposicion y conjuncion",
+        "para que sirve una preposicion"
+      ],
+      "responses": [
+        "Una PREPOSICIÓN es una palabra invariable que relaciona elementos dentro de la oración, indicando lugar, tiempo, modo o causa (ej: a, ante, con, de, desde, en, entre, hacia, hasta, para, por, según, sin, sobre, tras).",
+        "Ejemplo de preposición: 'El libro está SOBRE la mesa' (indica lugar) o 'Vengo DESDE Quito' (indica origen).",
+        "Una CONJUNCIÓN une palabras u oraciones (ej: y, o, pero, porque, aunque, si).",
+        "Las conjunciones COORDINANTES unen elementos del mismo nivel ('café Y té'). Las SUBORDINANTES unen una oración principal con una subordinada ('Estudio PORQUE quiero aprender')."
+      ]
+    },
+    {
+      "tag": "leng_articulo_interjeccion",
+      "patterns": [
+        "que es un articulo",
+        "tipos de articulos cuales son",
+        "que es un articulo determinado",
+        "que es un articulo indeterminado",
+        "ejemplos de articulos",
+        "que es una interjeccion",
+        "ejemplos de interjecciones",
+        "para que sirve una interjeccion",
+        "cuales son los articulos en español"
+      ],
+      "responses": [
+        "Un ARTÍCULO es una palabra que acompaña al sustantivo e indica su género y número (ej: el, la, los, las, un, una, unos, unas).",
+        "Los artículos DETERMINADOS (el, la, los, las) señalan algo conocido o específico ('EL profesor llegó'). Los INDETERMINADOS (un, una, unos, unas) señalan algo no específico ('UN profesor llegó').",
+        "Una INTERJECCIÓN es una palabra o expresión que manifiesta emociones, sensaciones o llamadas de atención de forma espontánea (ej: '¡Ay!', '¡Vaya!', '¡Ojo!', '¡Auxilio!').",
+        "Las interjecciones se escriben normalmente entre signos de exclamación y no cumplen una función gramatical fija dentro de la oración."
+      ]
+    },
+    {
+      "tag": "leng_signos_puntuacion",
+      "patterns": [
+        "que son los signos de puntuacion",
+        "para que sirve la coma",
+        "para que sirve el punto",
+        "cuando se usa el punto y coma",
+        "cuando se usan los dos puntos",
+        "cuales son los signos de puntuacion",
+        "reglas de la coma",
+        "que es el punto y seguido",
+        "que es el punto y aparte",
+        "que es el punto final"
+      ],
+      "responses": [
+        "Los SIGNOS DE PUNTUACIÓN organizan el texto y ayudan a comprender el sentido de lo escrito (coma, punto, punto y coma, dos puntos, entre otros).",
+        "La COMA (,) señala una pausa breve, separa elementos de una lista ('compré manzanas, peras y uvas') o encierra aclaraciones.",
+        "El PUNTO (.) indica el final de una idea. Puede ser PUNTO Y SEGUIDO (continúa el mismo párrafo), PUNTO Y APARTE (cambia de párrafo) o PUNTO FINAL (termina el texto).",
+        "El PUNTO Y COMA (;) separa elementos de una lista que ya contienen comas, o une oraciones relacionadas. Los DOS PUNTOS (:) anuncian una enumeración, una cita textual o una explicación."
       ]
     },
     {
@@ -208,7 +340,7 @@
         "que es el analisis sintactico",
         "como se analiza una oracion",
         "analisis sintactico de oraciones",
-        "partes de la oracion",
+        "partes de la oracion cuales son",
         "que es el nucleo del sujeto",
         "que es el nucleo del predicado",
         "como identificar el nucleo"
