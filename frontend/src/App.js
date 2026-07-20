@@ -340,7 +340,7 @@ function App() {
             {configOpen && (
               <div className="section-card nav-config-card">
                 <div className="input-group">
-                  <label>Épocas:</label>
+                  <label>Iteraciones:</label>
                   <input
                     type="number"
                     value={epochs}
@@ -385,20 +385,7 @@ function App() {
           <h3>Rendimiento</h3>
           {modeloEntrenado && metricas ? (
             <>
-              <div className="metric-row">
-                <span>Exactitud:</span>
-                <strong>{metricas.exactitud}%</strong>
-              </div>
-              <div className="metric-bar-container">
-                <div
-                  className="metric-bar"
-                  style={{ width: `${metricas.exactitud}%` }}
-                ></div>
-              </div>
-              <div className="metric-row">
-                <span>Muestras de ent.:</span>
-                <strong>{metricas.preguntas_entrenamiento}</strong>
-              </div>
+              
               <div className="metric-row" style={{ marginTop: '4px' }}>
                 <span>Estado:</span>
                 <span className="badge-active">Estable</span>
