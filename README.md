@@ -1,6 +1,8 @@
 # PoliBot - Chatbot Educativo con IA
 
 PoliBot es un asistente educativo desarrollado como proyecto académico para responder preguntas de forma natural sobre diversas materias escolares y conceptos de aprendizaje. El sistema combina un backend en Flask con un frontend en React y utiliza un modelo clásico de procesamiento de lenguaje natural basado en TF-IDF y regresión logística para clasificar preguntas y generar respuestas.
+<img width="1842" height="882" alt="image" src="https://github.com/user-attachments/assets/f51bb101-1a0a-4d6c-b248-6e8006df651d" />
+
 
 ## 1. Propósito del proyecto
 
@@ -124,15 +126,7 @@ El backend expone un endpoint para entrenar el modelo con los datasets disponibl
 - GET /api/metrics: devuelve métricas de entrenamiento
 - POST /api/chat: recibe una pregunta y devuelve una respuesta
 
-### Ejemplo de uso con curl
 
-```bash
-curl http://localhost:5000/api/health
-```
-
-```bash
-curl -X POST http://localhost:5000/api/chat -H "Content-Type: application/json" -d "{\"mensaje\":\"¿Qué es una variable?\"}"
-```
 
 ## 9. Funcionamiento interno
 
