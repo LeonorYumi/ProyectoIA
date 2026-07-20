@@ -465,7 +465,6 @@ function App() {
           </div>
           {modeloEntrenado && metricas && (
             <div className="header-badge">
-              Modelo: {metricas.exactitud}% Acc
             </div>
           )}
         </header>
