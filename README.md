@@ -96,7 +96,17 @@ npm start
 La interfaz quedará disponible en:
 - http://localhost:3000
 
-## 6. Uso del sistema
+## 6. Despliegue en Producción
+
+El proyecto se encuentra totalmente desplegado en la nube y listo para su uso sin configuraciones locales adicionales:
+
+* **Frontend:** Alojado en **Vercel** en el siguiente enlace: https://proyecto-ia-rho.vercel.app/
+* **Backend API:** Alojado en **Render** bajo la dirección: https://proyectoia-dfrd.onrender.com/
+
+*Nota: La infraestructura gratuita de Render puede tardar unos segundos en "despertar" tras un periodo de inactividad al realizar la primera petición.*
+
+
+## 7. Uso del sistema
 
 ### Interacción con la interfaz
 1. Abrir la aplicación en el navegador.
@@ -107,7 +117,7 @@ La interfaz quedará disponible en:
 ### Entrenamiento del modelo
 El backend expone un endpoint para entrenar el modelo con los datasets disponibles. La interfaz también ofrece una opción para reentrenar el modelo desde la configuración avanzada.
 
-## 7. Endpoints principales del backend
+## 8. Endpoints principales del backend
 
 - GET /api/health: verifica el estado del servidor y el modelo
 - POST /api/train: entrena o reentrena el modelo
@@ -124,7 +134,7 @@ curl http://localhost:5000/api/health
 curl -X POST http://localhost:5000/api/chat -H "Content-Type: application/json" -d "{\"mensaje\":\"¿Qué es una variable?\"}"
 ```
 
-## 8. Funcionamiento interno
+## 9. Funcionamiento interno
 
 El sistema sigue este flujo:
 
@@ -135,7 +145,7 @@ El sistema sigue este flujo:
 5. Al recibir una pregunta, el sistema la transforma, la clasifica y devuelve una respuesta con un nivel de confianza.
 6. Si la confianza es baja, el sistema responde con un mensaje de fallback para pedir una reformulación.
 
-## 9. Dataset y conocimiento
+## 10. Dataset y conocimiento
 
 Los datasets se almacenan en la carpeta backend/datasets. Cada archivo JSON contiene intenciones con:
 - tag: identificador de la intención
@@ -144,21 +154,21 @@ Los datasets se almacenan en la carpeta backend/datasets. Cada archivo JSON cont
 
 Esto permite ampliar el conocimiento del chatbot agregando nuevas intenciones, ejemplos y respuestas sin modificar la lógica central.
 
-## 10. Notas importantes
+## 11. Notas importantes
 
 - El modelo actual es un enfoque simple y educativo, no un sistema de IA generativa.
 - La respuesta depende de la calidad del dataset y del entrenamiento realizado.
 - Para mejorar el rendimiento, conviene agregar más ejemplos y categorías específicas.
 - El frontend guarda conversaciones locales en el navegador mediante localStorage.
 
-## 11. Futuras mejoras
+## 12. Futuras mejoras
 
 - Integrar un modelo más avanzado de NLP o lenguaje grande
 - Añadir autenticación y persistencia de conversaciones en servidor
 - Mejorar la gestión de contexto y memoria conversacional
 - Soportar respuestas más completas y contextualizadas
 
-## 12. Créditos
+## 13. Créditos
 
 Camila Bueno
 Leornor Yumi
