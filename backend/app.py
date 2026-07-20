@@ -4,7 +4,13 @@ from flask_cors import CORS
 from model import entrenar_modelo, cargar_metricas, predecir, PARAMS_DEFAULT
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://localhost:3001", "https://proyectoia-rho.vercel.app"]}}, supports_credentials=True)
+
+CORS(app, resources={r"/*": {"origins": [
+    "http://localhost:3000", 
+    "http://localhost:3001", 
+    "https://proyectoia-rho.vercel.app",
+    "https://proyecto-ia-rho.vercel.app"
+]}}, supports_credentials=True)
 
 try:
     print("Entrenando modelo con el dataset actualizado...")
@@ -27,11 +33,14 @@ def estado_modelo():
     }
 
 
+# Doble ruta para evitar errores 404 en despliegue
 @app.route("/api/health", methods=["GET"])
+@app.route("/api/health/", methods=["GET"])
 def health_check():
     return jsonify(estado_modelo())
 
 @app.route("/api/train", methods=["POST"])
+@app.route("/api/train/", methods=["POST"])
 def train_model():
     global vectorizer, clf, respuestas, umbral
 
@@ -51,6 +60,7 @@ def train_model():
 
 
 @app.route("/api/metrics", methods=["GET"])
+@app.route("/api/metrics/", methods=["GET"])
 def get_metrics():
     metricas_entrenamiento = cargar_metricas()
     if metricas_entrenamiento is None:
@@ -59,6 +69,7 @@ def get_metrics():
 
 
 @app.route("/api/chat", methods=["POST"])
+@app.route("/api/chat/", methods=["POST"])
 def chat_endpoint():
     body = request.get_json(silent=True) or {}
     mensaje = (body.get("mensaje") or body.get("pregunta") or "").strip()
@@ -67,7 +78,6 @@ def chat_endpoint():
         return jsonify({"error": "El campo 'mensaje' es requerido."}), 400
 
     if clf is None or vectorizer is None or respuestas is None:
-        # Fallback: prove a friendly instructional response when no trained model exists
         return jsonify({
             "respuesta": "Aún no hay un modelo entrenado. Puedes entrenarlo usando el botón 'Entrenar modelo'. Mientras tanto, intenta preguntas generales sobre matemáticas, programación o ciencias.",
             "intencion": "fallback",
