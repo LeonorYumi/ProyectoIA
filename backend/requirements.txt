@@ -1,7 +1,7 @@
-#Requerimientos del back 
-#Se instalan dentro del entorno .venv
-
 flask
 flask-cors
 scikit-learn
- 
+numpy
+scipy
+joblib
+gunicorn
