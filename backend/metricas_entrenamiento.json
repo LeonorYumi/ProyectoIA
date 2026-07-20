@@ -5,9 +5,9 @@
     "test_size": 0.2,
     "umbral": 0.12
   },
-  "n_ejemplos": 1136,
-  "n_intenciones": 78,
-  "accuracy": 0.6885964912280702,
+  "n_ejemplos": 1277,
+  "n_intenciones": 90,
+  "accuracy": 0.6796875,
   "reporte": {
     "agradecimiento": {
       "precision": 1.0,
@@ -17,92 +17,92 @@
     },
     "ayuda_general": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
       "support": 2.0
     },
     "cien_atomo": {
-      "precision": 0.5,
+      "precision": 0.8,
       "recall": 0.8,
-      "f1-score": 0.6153846153846154,
+      "f1-score": 0.8,
       "support": 5.0
     },
     "cien_celula": {
-      "precision": 0.15384615384615385,
-      "recall": 0.4,
-      "f1-score": 0.2222222222222222,
+      "precision": 0.36363636363636365,
+      "recall": 0.8,
+      "f1-score": 0.5,
       "support": 5.0
     },
     "cien_ciclo_agua": {
-      "precision": 1.0,
-      "recall": 0.3333333333333333,
-      "f1-score": 0.5,
+      "precision": 0.3,
+      "recall": 1.0,
+      "f1-score": 0.46153846153846156,
       "support": 3.0
     },
     "cien_ecosistema": {
-      "precision": 1.0,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.8,
-      "support": 3.0
-    },
-    "cien_estados_materia": {
-      "precision": 1.0,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.8,
-      "support": 3.0
-    },
-    "cien_evolucion": {
-      "precision": 0.5,
-      "recall": 0.5,
-      "f1-score": 0.5,
-      "support": 2.0
-    },
-    "cien_fotosintesis": {
-      "precision": 1.0,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.8,
-      "support": 6.0
-    },
-    "cien_genetica": {
-      "precision": 1.0,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.8,
-      "support": 3.0
-    },
-    "cien_gravedad": {
-      "precision": 0.75,
-      "recall": 0.75,
-      "f1-score": 0.75,
-      "support": 4.0
-    },
-    "cien_leyes_newton": {
       "precision": 0.5,
       "recall": 0.3333333333333333,
       "f1-score": 0.4,
       "support": 3.0
     },
-    "cien_quimica_basica": {
+    "cien_estados_materia": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "cien_evolucion": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "cien_fotosintesis": {
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1-score": 0.8333333333333334,
+      "support": 5.0
+    },
+    "cien_genetica": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
       "support": 3.0
     },
-    "cien_sistema_solar": {
-      "precision": 0.3333333333333333,
+    "cien_gravedad": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "cien_leyes_newton": {
+      "precision": 1.0,
       "recall": 0.6666666666666666,
-      "f1-score": 0.4444444444444444,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "cien_quimica_basica": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 3.0
+    },
+    "cien_sistema_solar": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
       "support": 3.0
     },
     "cien_tabla_periodica": {
-      "precision": 0.6666666666666666,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
       "support": 3.0
     },
     "despedida": {
-      "precision": 0.6666666666666666,
+      "precision": 1.0,
       "recall": 0.6666666666666666,
-      "f1-score": 0.6666666666666666,
+      "f1-score": 0.8,
       "support": 3.0
     },
     "geo_capitales": {
@@ -113,14 +113,14 @@
     },
     "geo_clima": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
       "support": 3.0
     },
     "geo_continentes": {
-      "precision": 1.0,
+      "precision": 0.6666666666666666,
       "recall": 1.0,
-      "f1-score": 1.0,
+      "f1-score": 0.8,
       "support": 4.0
     },
     "geo_ecuador_provincias": {
@@ -196,9 +196,9 @@
       "support": 3.0
     },
     "hist_primera_guerra_mundial": {
-      "precision": 0.8,
-      "recall": 1.0,
-      "f1-score": 0.8888888888888888,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
       "support": 4.0
     },
     "hist_revolucion_francesa": {
@@ -226,27 +226,27 @@
       "support": 2.0
     },
     "info_arreglos_listas": {
-      "precision": 0.3333333333333333,
-      "recall": 0.25,
-      "f1-score": 0.2857142857142857,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
       "support": 4.0
     },
     "info_bases_datos": {
-      "precision": 0.8,
-      "recall": 1.0,
-      "f1-score": 0.8888888888888888,
-      "support": 4.0
-    },
-    "info_bucles": {
       "precision": 0.75,
       "recall": 0.75,
       "f1-score": 0.75,
       "support": 4.0
     },
+    "info_bucles": {
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
+    },
     "info_condicionales": {
       "precision": 1.0,
-      "recall": 0.5,
-      "f1-score": 0.6666666666666666,
+      "recall": 0.25,
+      "f1-score": 0.4,
       "support": 4.0
     },
     "info_control_versiones": {
@@ -257,8 +257,8 @@
     },
     "info_estructuras_datos": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
       "support": 2.0
     },
     "info_frameworks_librerias": {
@@ -268,21 +268,21 @@
       "support": 2.0
     },
     "info_funciones": {
-      "precision": 0.75,
-      "recall": 0.75,
-      "f1-score": 0.75,
+      "precision": 0.4,
+      "recall": 0.5,
+      "f1-score": 0.4444444444444444,
       "support": 4.0
     },
     "info_inteligencia_artificial": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
       "support": 4.0
     },
     "info_programacion_orientada_objetos": {
-      "precision": 0.6,
+      "precision": 0.75,
       "recall": 0.75,
-      "f1-score": 0.6666666666666666,
+      "f1-score": 0.75,
       "support": 4.0
     },
     "info_que_es_programacion": {
@@ -292,21 +292,21 @@
       "support": 7.0
     },
     "info_redes_apis": {
-      "precision": 0.5714285714285714,
+      "precision": 0.3333333333333333,
       "recall": 1.0,
-      "f1-score": 0.7272727272727273,
+      "f1-score": 0.5,
       "support": 4.0
     },
     "info_tipos_algoritmos": {
-      "precision": 1.0,
-      "recall": 0.5,
-      "f1-score": 0.6666666666666666,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
       "support": 2.0
     },
     "info_variables": {
-      "precision": 0.4,
-      "recall": 0.4,
-      "f1-score": 0.4,
+      "precision": 0.2,
+      "recall": 0.2,
+      "f1-score": 0.2,
       "support": 5.0
     },
     "leng_adjetivo": {
@@ -315,11 +315,23 @@
       "f1-score": 1.0,
       "support": 1.0
     },
-    "leng_analisis_sintactico": {
+    "leng_adverbio": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
+      "support": 2.0
+    },
+    "leng_analisis_sintactico": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
       "support": 1.0
+    },
+    "leng_articulo_interjeccion": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
     },
     "leng_figuras_literarias": {
       "precision": 1.0,
@@ -329,8 +341,8 @@
     },
     "leng_generos_literarios": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
       "support": 2.0
     },
     "leng_ia": {
@@ -345,7 +357,31 @@
       "f1-score": 1.0,
       "support": 2.0
     },
+    "leng_oracion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
     "leng_ortografia_tildes": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "leng_preposicion_conjuncion": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 2.0
+    },
+    "leng_pronombre": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "leng_signos_puntuacion": {
       "precision": 1.0,
       "recall": 0.5,
       "f1-score": 0.6666666666666666,
@@ -358,9 +394,9 @@
       "support": 1.0
     },
     "leng_sujeto_predicado": {
-      "precision": 0.6666666666666666,
-      "recall": 1.0,
-      "f1-score": 0.8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
       "support": 2.0
     },
     "leng_sustantivo": {
@@ -376,9 +412,9 @@
       "support": 1.0
     },
     "leng_verbo": {
-      "precision": 0.5,
-      "recall": 0.3333333333333333,
-      "f1-score": 0.4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 3.0
     },
     "mat_algebra": {
@@ -387,16 +423,22 @@
       "f1-score": 0.0,
       "support": 2.0
     },
+    "mat_clasificacion_numeros": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
     "mat_derivadas": {
-      "precision": 0.5,
-      "recall": 0.5,
-      "f1-score": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 2.0
     },
     "mat_division": {
       "precision": 1.0,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.8,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 3.0
     },
     "mat_ecuaciones": {
@@ -405,16 +447,22 @@
       "f1-score": 0.6666666666666666,
       "support": 2.0
     },
-    "mat_fracciones": {
-      "precision": 0.6666666666666666,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.6666666666666666,
+    "mat_estadistica": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
       "support": 3.0
     },
-    "mat_funciones": {
+    "mat_fracciones": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
+      "support": 3.0
+    },
+    "mat_funciones": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
       "support": 3.0
     },
     "mat_geometria": {
@@ -423,10 +471,22 @@
       "f1-score": 0.5,
       "support": 3.0
     },
-    "mat_multiplicacion": {
+    "mat_logaritmos": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
+      "support": 2.0
+    },
+    "mat_mcd_mcm": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "mat_multiplicacion": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
       "support": 3.0
     },
     "mat_numeros_primos": {
@@ -436,15 +496,21 @@
       "support": 2.0
     },
     "mat_operaciones_basicas": {
-      "precision": 0.5333333333333333,
+      "precision": 0.47058823529411764,
       "recall": 1.0,
-      "f1-score": 0.6956521739130435,
+      "f1-score": 0.64,
       "support": 8.0
     },
     "mat_porcentajes": {
-      "precision": 0.6666666666666666,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.6666666666666666,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "mat_potencias_raices": {
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.3333333333333333,
       "support": 3.0
     },
     "mat_resta": {
@@ -453,10 +519,16 @@
       "f1-score": 0.6666666666666666,
       "support": 3.0
     },
-    "mat_suma": {
+    "mat_sistemas_ecuaciones": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
+      "support": 2.0
+    },
+    "mat_suma": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
       "support": 4.0
     },
     "mat_trigonometria": {
@@ -473,22 +545,22 @@
     },
     "saludo": {
       "precision": 1.0,
-      "recall": 0.6666666666666666,
-      "f1-score": 0.8,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 3.0
     },
-    "accuracy": 0.6885964912280702,
+    "accuracy": 0.6796875,
     "macro avg": {
-      "precision": 0.7334436930590775,
-      "recall": 0.6626068376068375,
-      "f1-score": 0.6717196105434677,
-      "support": 228.0
+      "precision": 0.7327612257024021,
+      "recall": 0.6468518518518519,
+      "f1-score": 0.653468005245783,
+      "support": 256.0
     },
     "weighted avg": {
-      "precision": 0.7265567765567766,
-      "recall": 0.6885964912280702,
-      "f1-score": 0.676684366711064,
-      "support": 228.0
+      "precision": 0.72495175627069,
+      "recall": 0.6796875,
+      "f1-score": 0.6612448806980058,
+      "support": 256.0
     }
   },
   "validacion_disponible": true
