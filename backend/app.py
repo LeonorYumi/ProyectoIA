@@ -4,7 +4,7 @@ from flask_cors import CORS
 from model import entrenar_modelo, cargar_metricas, predecir, PARAMS_DEFAULT
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://localhost:3001"]}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://localhost:3001", "https://proyectoia-rho.vercel.app"]}}, supports_credentials=True)
 
 try:
     print("Entrenando modelo con el dataset actualizado...")

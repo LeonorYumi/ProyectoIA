@@ -60,7 +60,6 @@ function App() {
   const [lr, setLr] = useState(0.01);
 
   const finalDelChat = useRef(null);
-  // Reemplaza esta URL de ejemplo por el enlace exacto de tu Web Service en Render
   const API_BASE = 'https://proyectoia-dfrd.onrender.com/api';
 
   useEffect(() => {
